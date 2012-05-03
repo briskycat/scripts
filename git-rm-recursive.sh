@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # delete all instances of a file in the entire git repo.  Used to redact sensitive accidental commits.
 # specify filename to delete as cmdline param

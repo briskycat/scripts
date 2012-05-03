@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # set priority level
 PRIORITY_LEVEL=1100

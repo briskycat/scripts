@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash -
 
 android create avd \-n $2-2.1 \-t 1 \--force
 android create avd \-n $2-2.1-google-api \-t 2 \--force

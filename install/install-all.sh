@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 # installation script for new Ubuntu installs
 # very incomplete
 

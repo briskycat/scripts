@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash -
 
 # Initializr script modified for Kickstrap.  Leaving Initializr params, maybe useful later
 

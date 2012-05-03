@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python -
+
 # Courtesy of Sue in Boston
 # http://zombievir.us/2010/02/beautiful-soup-for-ugly-html/
 

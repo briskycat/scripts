@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # install or update Pathogen.vim to ~/.vim/autoload
 # http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen

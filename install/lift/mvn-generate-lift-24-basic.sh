@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 mvn archetype:generate \
     -DarchetypeGroupId=net.liftweb \

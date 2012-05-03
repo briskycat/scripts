@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # reset all java alternatives if install/config problems.
 # run with sudo

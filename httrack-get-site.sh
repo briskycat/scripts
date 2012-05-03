@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash -
 
 ## download the entire site at url.
 ## url passed as first command line argument.

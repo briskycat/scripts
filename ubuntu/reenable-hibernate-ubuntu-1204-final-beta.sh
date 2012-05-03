@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash -
 
 # Ubuntu 12.04 final beta (and release?) disables Hibernate by default.
 # To enable it, first test that it works at the commandline:

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # install or update Vundle to ~/.vim/bundle/vundle
 # https://github.com/repos-vim/vundle#readme

@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python -
 
 # [PSEUDOCODE]
 # MSG:  Welcome to the Lift Stack installer.  This installer can download and configure 

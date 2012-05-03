@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python -
+
 # Part of (under construction) makeover module for prettifying terrible html.
 # 1.  soupify and defrontpagify all *.htm* files in current directory.
 # 2.  write back to same dir with '.pretty.htm' appended to filename.

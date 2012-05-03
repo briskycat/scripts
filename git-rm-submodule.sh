@@ -1,4 +1,4 @@
-#!/bin/sh -
+#!/usr/bin/env bash -
 
 # remove a submodule
 # ref: http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule

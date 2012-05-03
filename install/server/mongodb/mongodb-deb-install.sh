@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 #http://www.mongodb.org/display/DOCS/Ubuntu+and+Debian+packages
 
 echo '' | sudo tee -a /etc/apt/sources.list

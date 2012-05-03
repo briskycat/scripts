@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash -
 
 # http://richrines.com/post/10886870567/ultimate-nmap-scan
 

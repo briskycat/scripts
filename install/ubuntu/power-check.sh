@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # how to check CPU power governors, etc.  via http://lesswatts.org/
 

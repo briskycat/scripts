@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # install git from repo (Deb repo's have relatively up-to-date git at least)
 #apt-get install git mercurial mercurial-git git-svn

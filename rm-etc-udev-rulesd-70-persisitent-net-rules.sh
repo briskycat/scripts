@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # for newly cloned virtual machine, must delete this ruleset 
 # and reboot to enable networking

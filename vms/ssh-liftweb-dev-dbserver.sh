@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 ssh 192.168.56.102

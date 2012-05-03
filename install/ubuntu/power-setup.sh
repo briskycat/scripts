@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # tips from http://lesswatts.org/
 # see info power-check

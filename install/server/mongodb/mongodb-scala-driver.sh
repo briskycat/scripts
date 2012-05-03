@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 #http://www.mongodb.org/downloads
 #http://www.mongodb.org/display/DOCS/Java+Language+Center

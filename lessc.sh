@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash -
 
 # Less installed via npm:  npm install less
 # npm and node installed via PPA:  ppa:chris-lea/node.js

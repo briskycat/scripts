@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # http://www.jamesward.com/2010/10/14/install-adobe-air-on-64-bit-ubuntu-10-10/
 

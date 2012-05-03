@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash -
 
 EXPECTED_ARGS_OPTIONAL=3
 EXPECTED_ARGS_REQUIRED=2 

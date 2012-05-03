@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -
 
 # install or update Vundle .vim to ~/.vim/autoload
 # https://github.com/repos-vim/dot_vim
