@@ -1,6 +1,4 @@
-
-
-liftstack liftstack liftstack=lll
-
-LIFT_STACK liftstack
-
+#!/usr/bin/env bash -
+#!/usr/bin/env bash - 
+#!/usr/bin/env bash - -
+#!/usr/bin/env bash - - 
