@@ -5,6 +5,6 @@
 
 argv=$@
 
-echo "Adding submodule from repo $1 as submodules/$2"
+echo "Adding submodule from repo $1 as $2"
 
-git submodule add $1 submodules/$2
+git submodule add $1 $2

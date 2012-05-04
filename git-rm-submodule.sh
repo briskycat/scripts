@@ -3,6 +3,12 @@
 # remove a submodule
 # ref: http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule
 #
+# EXAMPLES
+# $> sh git-rm-submodule.sh submodules/bootstrap 
+#   (no trailing / , run in liftstack/build, assumes the submodule '320andup' is located in 
+#   lifstack/build/submodules/320andup)
+#
+# INFO
 # To remove a submodule you need to:
 #
 # 1.  Delete the relevant line from the .gitmodules file.
@@ -24,21 +30,21 @@
 # It is a good idea to do git git rebase HEAD first and git commit at the end, if you put this in a script.  
 #   If there are rebase conflicts, resolve them as with normal merge conflicts, then 'git add -a', 
 #   then 'git rebase --continue' to finish the rebase.  (http://book.git-scm.com/4_rebasing.html)
-
+#
 argv=$@
 echo "argv = ${argv}'"
 
 echo "Rebasing HEAD"
 git rebase HEAD
-echo "Executing 'git rm --cached $2'"
-git rm -r --cached $2
-echo "Executing 'git config -f .gitmodules --remove-section submodule.$2'"
-git config -f .gitmodules --remove-section submodule.$2
-echo "Executing 'git config -f .git/config --remove-section submodule.$2'"
-git config -f .git/config --remove-section submodule.$2
-echo "Executing 'rm -rf $2'"
-rm -rf $2
+echo "Executing 'git rm --cached $1'"
+git rm -r --cached $1
+echo "Executing 'git config -f .gitmodules --remove-section submodule.$1'"
+git config -f .gitmodules --remove-section submodule.$1
+echo "Executing 'git config -f .git/config --remove-section submodule.$1'"
+git config -f .git/config --remove-section submodule.$1
+echo "Executing 'rm -rf $1'"
+rm -rf $1
 echo "Adding and Committing..."
 #git add -A
-git commit -am "removed submodule $2"
+git commit -am "removed submodule $1"
 echo "Done"
