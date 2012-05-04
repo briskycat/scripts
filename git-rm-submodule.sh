@@ -5,8 +5,8 @@
 #
 # EXAMPLES
 # $> sh git-rm-submodule.sh submodules/bootstrap 
-#   (no trailing / , run in liftstack/build, assumes the submodule '320andup' is located in 
-#   lifstack/build/submodules/320andup)
+#   (no trailing / , run in repo root dir, assumes the submodule 'bootstrap' is located in 
+#   [repo root]/submodules/bootstrap)
 #
 # INFO
 # To remove a submodule you need to:
@@ -27,15 +27,15 @@
 # When you do git submodule add, it only adds it to .gitmodules, but once you did git submodule 
 #   init it has been added to .git/config too.
 # 
-# It is a good idea to do git git rebase HEAD first and git commit at the end, if you put this in a script.  
+# It is a good idea to do git rebase HEAD first and git commit at the end, if you put this in a script.  
 #   If there are rebase conflicts, resolve them as with normal merge conflicts, then 'git add -a', 
 #   then 'git rebase --continue' to finish the rebase.  (http://book.git-scm.com/4_rebasing.html)
 #
 argv=$@
 echo "argv = ${argv}'"
 
-echo "Rebasing HEAD"
-git rebase HEAD
+#echo "Rebasing HEAD"
+#git rebase HEAD
 echo "Executing 'git rm --cached $1'"
 git rm -r --cached $1
 echo "Executing 'git config -f .gitmodules --remove-section submodule.$1'"
@@ -46,5 +46,5 @@ echo "Executing 'rm -rf $1'"
 rm -rf $1
 echo "Adding and Committing..."
 #git add -A
-git commit -am "removed submodule $1"
-echo "Done"
+#git commit -am "removed submodule $1"
+echo "Done.  Git add and commit to finalize."
