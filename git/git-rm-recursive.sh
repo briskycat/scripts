@@ -9,9 +9,9 @@ argv=$@
 echo "${argv}"
 #git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch "${argv}"'
 #git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch ${argv}' --tag-name-filter 'cat' HEAD --all
-#git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch .gitconfig'
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch .gitconfig.dm14050us'
 #git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch install-server.sh'
-git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch archive\ 3'
+#git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch archive\ 3'
 
 # after above, run:
 # git add -all
