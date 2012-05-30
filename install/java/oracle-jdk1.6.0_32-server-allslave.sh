@@ -1,4 +1,5 @@
 #!/usr/bin/env bash -
+# tested on Ubuntu 12.04 only
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
