@@ -1,6 +1,5 @@
-#!$BIN/env bash -
+#!/usr/bin/env bash -
 
-# set priority level
 BIN="/usr/bin"
 JVM="/usr/lib/jvm"
 JDK="jdk1.6.0_32"
@@ -11,7 +10,6 @@ PRIORITY_LEVEL=1200
 
 # install Oracle JDK6 alternative for update-alternatives --config java
 
-# $JDK_BIN
 sudo update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_LEVEL \
 --slave $BIN/appletviewer appletviewer $JVM/$JDK_BIN/appletviewer \
 --slave $BIN/apt apt $JVM/$JDK_BIN/apt \
