@@ -19,7 +19,7 @@ sudo update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_L
 --slave $BIN/extcheck extcheck $JVM/$JDK_BIN/extcheck \
 --slave $BIN/HtmlConverter HtmlConverter $JVM/$JDK_BIN/HtmlConverter \
 --slave $BIN/idlj idlj $JVM/$JDK_BIN/idlj \
---slave $BIN/jar $JVM/$JDK_BIN/jar \
+--slave $BIN/jar jar $JVM/$JDK_BIN/jar \
 --slave $BIN/jarsigner jarsigner $JVM/$JDK_BIN/jarsigner \
 --slave $BIN/javac javac $JVM/$JDK_BIN/javac \
 --slave $BIN/javadoc javadoc $JVM/$JDK_BIN/javadoc \
@@ -56,21 +56,12 @@ sudo update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_L
 --slave $BIN/wsimport wsimport $JVM/$JDK_BIN/wsimport \
 --slave $BIN/xjc xjc $JVM/$JDK_BIN/xjc \
 --slave $BIN/dblook dblook $JVM/$JDK_DB_BIN/dblook \
---slave $BIN/dblook.bat dblook.bat $JVM/$JDK_DB_BIN/dblook.bat \
---slave $BIN/derby_common.bat derby_common.bat $JVM/$JDK_DB_BIN/derby_common.bat \
 --slave $BIN/ij ij $JVM/$JDK_DB_BIN/ij \
---slave $BIN/ij.bat ij.bat $JVM/$JDK_DB_BIN/ij.bat \
 --slave $BIN/NetworkServerControl NetworkServerControl $JVM/$JDK_DB_BIN/NetworkServerControl \
---slave $BIN/NetworkServerControl.bat NetworkServerControl.bat $JVM/$JDK_DB_BIN/NetworkServerControl.bat \
 --slave $BIN/setEmbeddedCP setEmbeddedCP $JVM/$JDK_DB_BIN/setEmbeddedCP \
---slave $BIN/setEmbeddedCP.bat setEmbeddedCP.bat $JVM/$JDK_DB_BIN/setEmbeddedCP.bat \
 --slave $BIN/setNetworkClientCP setNetworkClientCP $JVM/$JDK_DB_BIN/setNetworkClientCP \
---slave $BIN/setNetworkClientCP.bat setNetworkClientCP.bat $JVM/$JDK_DB_BIN/setNetworkClientCP.bat \
 --slave $BIN/setNetworkServerCP setNetworkServerCP $JVM/$JDK_DB_BIN/setNetworkServerCP \
---slave $BIN/setNetworkServerCP.bat setNetworkServerCP.bat $JVM/$JDK_DB_BIN/setNetworkServerCP.bat \
 --slave $BIN/startNetworkServer startNetworkServer $JVM/$JDK_DB_BIN/startNetworkServer \
---slave $BIN/startNetworkServer.bat startNetworkServer.bat $JVM/$JDK_DB_BIN/startNetworkServer.bat \
 --slave $BIN/stopNetworkServer stopNetworkServer $JVM/$JDK_DB_BIN/stopNetworkServer \
---slave $BIN/stopNetworkServer.bat stopNetworkServer.bat $JVM/$JDK_DB_BIN/stopNetworkServer.bat \
---slave $BIN/sysinfo sysinfo usr/lib/jvm/$JDK_DB_BIN/sysinfo \
---slave $BIN/sysinfo.bat sysinfo.bat $JVM/$JDK_DB_BIN/sysinfo.bat
+--slave $BIN/sysinfo sysinfo $JVM/$JDK_DB_BIN/sysinfo \
+
