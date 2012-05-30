@@ -1,16 +1,18 @@
 #!/usr/bin/env bash -
 
 BIN="/usr/bin"
+MAN="/usr/share/man"
 JVM="/usr/lib/jvm"
 JDK="jdk1.6.0_32"
 #JDK="jdk1.7.0_04"
 JDK_BIN="$JDK/bin"
 JDK_DB_BIN="$JDK/db/bin"
+JDK_MAN="$JDK/man"
 PRIORITY_LEVEL=1200
 
 # install Oracle JDK6 alternative for update-alternatives --config java
 
-sudo update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_LEVEL \
+update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_LEVEL \
 --slave $BIN/appletviewer appletviewer $JVM/$JDK_BIN/appletviewer \
 --slave $BIN/apt apt $JVM/$JDK_BIN/apt \
 --slave $BIN/ControlPanel ControlPanel $JVM/$JDK_BIN/ControlPanel \
@@ -62,4 +64,4 @@ sudo update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_L
 --slave $BIN/startNetworkServer startNetworkServer $JVM/$JDK_DB_BIN/startNetworkServer \
 --slave $BIN/stopNetworkServer stopNetworkServer $JVM/$JDK_DB_BIN/stopNetworkServer \
 --slave $BIN/sysinfo sysinfo $JVM/$JDK_DB_BIN/sysinfo \
-
+--slave $MAN/man10 man.java $JVM/$JDK_MAN/man1
