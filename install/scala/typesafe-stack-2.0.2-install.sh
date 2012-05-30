@@ -10,7 +10,6 @@ PRIORITY_LEVEL=1200
 
 # install Typesafe Stack alternative for update-alternatives --config scala
 
-echo """
 update-alternatives --install $BIN/scala scala $STACK_BIN/scala $PRIORITY_LEVEL \ 
 --slave $BIN/classes classes $STACK_BIN/classes \ 
 --slave $BIN/fsc fsc $STACK_BIN/fsc \ 
@@ -24,4 +23,3 @@ update-alternatives --install $BIN/scala scala $STACK_BIN/scala $PRIORITY_LEVEL 
 --slave $BIN/scaladoc scaladoc $STACK_BIN/scaladoc \ 
 --slave $BIN/scalap scalap $STACK_BIN/scalap \ 
 --slave $MAN/man11 man.scala $STACK_MAN/man1
-"""
