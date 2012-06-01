@@ -1,5 +1,15 @@
 #!/usr/bin/env bash -
 
+remove="./"
+SUBMODULES=( ${find ./submodules -maxdepth 1} )
+#SUBMODULES=( ${find ./submodules -maxdepth 1}#"./" )
+echo $SUBMODULES
+
+: << '--COMMENT--'
+
+git rm -rf submodules/*
+rm -rf submodules/*
+
 # remove a submodule
 # ref:  http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule
 #       http://stackoverflow.com/questions/10220140/git-rm-r-cached-not-removing-submodule-folder-and-contents
@@ -67,3 +77,4 @@ git config -f .git/config --remove-section submodule.$1
 echo "Adding and Committing ..."
 git commit -am "removed submodule $1"
 echo "Done.  Removed submodule $1 ..."
+--COMMENT--
