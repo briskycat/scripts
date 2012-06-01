@@ -55,7 +55,7 @@ echo "Rebasing HEAD ..."
 git rebase HEAD
 
 echo "Executing 'git rm $1' ..."
-git rm -r $1
+git rm -rf $1
 
 echo "Executing 'git config -f .gitmodules --remove-section submodule.$1' ..."
 git config -f .gitmodules --remove-section submodule.$1
