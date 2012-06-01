@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash -
 
 # $1 = source repo for submodule
 # $2 = local name
