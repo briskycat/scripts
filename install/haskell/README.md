@@ -17,26 +17,30 @@ command available.
 
 ###I.  Install GHC
 
-1.  download [GHC][1] (the binary, not the source, unless you specifically need to build from 
+1.  download [GHC][1] to a temp dir (the binary, not the source, unless you specifically need to build from 
     source and it's worth the long build)
-2.  extract to a temp directory
-3.  cd temp
-4.  tar -xvf ghc-7.4.1-x86\_64-unknown-linux.tar.bz
-5.  cd ghc-7.4.1
-6.  ./configure --prefix=/opt/haskell/ghc/7.4.1
-7.  sudo make install
-8.  sudo sh [haskell-ghc-install.sh][2]
+2.  tar -xvf ghc-7.4.1-x86\_64-unknown-linux.tar.bz
+3.  cd ghc-7.4.1
+4.  ./configure --prefix=/opt/haskell/ghc/7.4.1
+5.  sudo make install
+6.  sudo sh [haskell-ghc-install.sh][2] (before running, make sure the last line in the 
+    script does not overwrite `/usr/share/man/man10`.  If it does, change to `man11` or 
+    something else safe.
+7.  test:  
+    `ghc --version`
+    `man ghc`
 
 ###II.  Install Haskell Platform
 
 1.  Download [current Haskell-Platform source][3]
-2.  Extract to a temp dir
-3.  cd temp
+2.  tar -xvf haskell-platform-2012.2.0.0.tar.gz 
+3.  cd haskell-platform-2012.2.0.0
 4.  ./configure --prefix=/opt/haskell/platform/2012.2.00
 5.  sudo make
 6.  sudo make install
-7.  sudo sh [haskell-platform-install.sh][4]
-8.  cabal update
+7.  sudo sh [haskell-platform-install.sh][4] 
+8.  test: `which cabal`
+9.  cabal update
 
 ###III. Troubleshooting
 
