@@ -8,7 +8,7 @@ BIN="/usr/bin"
 MAN="/usr/share/man"
 PLATFORM="/opt/haskell/platform/2012.2.0.0"
 PLATFORM_BIN="$PLATFORM/bin"
-#PLATFORM_MAN="$PLATFORM/share/doc/man"
+#PLATFORM_MAN="$PLATFORM/share/doc/man" #no man files with platform
 PRIORITY_LEVEL=1200
 
 update-alternatives --install $BIN/cabal cabal $PLATFORM_BIN/cabal $PRIORITY_LEVEL \
