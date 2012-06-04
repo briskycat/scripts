@@ -19,7 +19,8 @@ any derivative that has the Debian *update-alternatives* tool available.
     /opt/haskell/, instead of spread out over /usr/bin, /usr/lib, and /usr/share.
 5.  Easily uninstall with *update-alternatives --remove-all* (script included), and 
     *rm -rf /opt/haskell*.
-6.  Run as system user instead of adding /opt/haskell to your .profile.
+6.  Run haskell via system PATH instead of user PATH (eg, no need to add 
+    /opt/haskell/ghc/bin to your PATH in .profile)
 7.  Get used to using *update-alternatives*, it's a great tool that makes managing 
     manually installed, multi-version software painless.  Java and Scala (via Typesafe 
     Stack) both work equally well with it.
