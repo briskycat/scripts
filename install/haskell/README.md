@@ -28,6 +28,7 @@ command available.
     something else safe.
 7.  test:  
     `ghc --version`
+
     `man ghc`
 
 ###II.  Install Haskell Platform
