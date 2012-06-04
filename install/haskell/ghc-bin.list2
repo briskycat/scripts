@@ -1,0 +1,13 @@
+ghc
+ghc-7.4.1
+ghci
+ghci-7.4.1
+ghc-pkg
+ghc-pkg-7.4.1
+haddock
+haddock-ghc-7.4.1
+hp2ps
+hpc
+hsc2hs
+runghc
+runhaskell

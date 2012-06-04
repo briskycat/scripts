@@ -1,0 +1,26 @@
+#!/usr/bin/env bash -
+
+# install haskell platform to the system user via ubuntu update-alternatives,
+# rather than as current user via .profile.  system user in this case = /usr/bin
+# tested on Ubuntu 12.04 only
+
+BIN="/usr/bin"
+MAN="/usr/share/man"
+GHC="/opt/haskell/ghc/7.4.1"
+GHC_BIN="$GHC/bin"
+GHC_MAN="$GHC/share/man"
+PLATFORM="/opt/haskell/platform/2012.2.0.0"
+PLATFORM_BIN="$PLATFORM/bin"
+PLATFORM_MAN="$PLATFORM/man"
+PRIORITY_LEVEL=1200
+
+update-alternatives --install $BIN/ghc ghc $GHC_BIN/ghc $PRIORITY_LEVEL \
+ --slave $BIN/ghci ghci $GHC_BIN/ghci \
+ --slave $BIN/ghc-pkg ghc-pkg $GHC_BIN/ghc-pkg \
+ --slave $BIN/haddock haddock $GHC_BIN/haddock \
+ --slave $BIN/hp2ps hp2ps $GHC_BIN/hp2ps \
+ --slave $BIN/hpc hpc $GHC_BIN/hpc \
+ --slave $BIN/hsc2hs hsc2hs $GHC_BIN/hsc2hs \
+ --slave $BIN/runghc runghc $GHC_BIN/runghc \
+ --slave $BIN/runhaskell runhaskell $GHC_BIN/runhaskell \
+ --slave $MAN/man10 man.ghc $GHC_MAN/man1
