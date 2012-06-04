@@ -1,6 +1,6 @@
 ##How to install Haskell Platform with Debian update-alternatives
 
-Works with Debian, Ubuntu, or any derivative that has the Debian update-alternatives
+Works with Debian, Ubuntu, or any derivative that has the Debian *update-alternatives*
 command available.
 
 ###Why?
@@ -50,13 +50,15 @@ command available.
 
 ###III. Troubleshooting
 
-If any errors occurred, check these pages:
+If any errors occurred during build, check that you have [the required dependencies][5].
 
-1.  [GHC build errors][5]
-2.  [Platform build errors][6] (check prereqs)
+Also, make sure you have the correct pairs of GHC and Haskell Platform.  Each Haskell
+Platform release is [designed to work with a specific version of GHC][5] (scroll down
+to the chart showing the matching version of GHC for each platform.  The latest platform
+2012.2.0.0 pairs with GHC 7.4.1).
 
 [1]: http://www.haskell.org/ghc/download\_ghc\_7\_4\_1#x86linux
 [2]: https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-ghc-install.sh 
 [3]: http://hackage.haskell.org/platform/linux.html
 [4]: https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-platform-install.sh
-
+[5]: http://www.vex.net/~trebla/haskell/haskell-platform.xhtml
