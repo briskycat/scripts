@@ -22,8 +22,8 @@ any derivative that has the Debian *update-alternatives* tool available.
 6.  Run haskell via system PATH instead of user PATH (eg, no need to add 
     /opt/haskell/ghc/bin to your PATH in .profile)
 7.  Get used to using *update-alternatives*, it's a great tool that makes managing 
-    manually installed, multi-version software painless.  Java and Scala (via Typesafe 
-    Stack) both work equally well with it.
+    manually installed, multi-version software painless.  [Java][6] and [Scala][7] both 
+    work equally well with it.
 
 ###I.  Install GHC
 
@@ -67,3 +67,5 @@ to the chart showing the matching version of GHC for each platform.  The latest 
 [3]: http://hackage.haskell.org/platform/linux.html
 [4]: https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-platform-install.sh
 [5]: http://www.vex.net/~trebla/haskell/haskell-platform.xhtml
+[6]: https://github.com/byrongibson/scripts/tree/master/install/java
+[7]: https://github.com/byrongibson/scripts/tree/master/install/scala 
