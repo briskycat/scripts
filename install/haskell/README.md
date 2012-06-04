@@ -11,12 +11,15 @@ command available.
     http://packages.debian.org/haskell-platform)
 2.  Manage multiple GHC and Haskell Platform versions, easily toggle between them with 
     *update-alternatives --config*.
-3.  Keep all files of GHC and Haskell Platform together in a  single location like 
+3.  Upgrade to new version of Haskell without overwriting or deleting the previous.  
+    If this causes regressions in your apps, easily roll back to the prior working
+    version with a simple *update-alternatives --config*.
+4.  Keep all files of GHC and Haskell Platform together in a  single location like 
     /opt/haskell/, instead of spread out over /usr/bin, /usr/lib, and /usr/share.
-4.  Easily uninstall with *update-alternatives --remove-all* (script included), and 
+5.  Easily uninstall with *update-alternatives --remove-all* (script included), and 
     *rm -rf /opt/haskell*.
-5.  Run as system user instead of adding /opt/haskell to your .profile.
-6.  Get used to using *update-alternatives*, it's a great tool that makes managing 
+6.  Run as system user instead of adding /opt/haskell to your .profile.
+7.  Get used to using *update-alternatives*, it's a great tool that makes managing 
     manually installed, multi-version software painless.  Java and Scala (via Typesafe 
     Stack) both work equally well with it.
 
