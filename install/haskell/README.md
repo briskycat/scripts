@@ -7,9 +7,9 @@ any derivative that has the Debian *update-alternatives* tool available.
 ###Why?
 
 1.  Debian/Ubuntu/etc repos seem to consistently lag the current version of Haskell 
-    platform.  Though they might be getting better about this now, judging from 
+    platform.  (Though that might be getting better, judging from how quickly
     http://packages.ubuntu.com/haskell-platform and 
-    http://packages.debian.org/haskell-platform)
+    http://packages.debian.org/haskell-platform were updated with Platform 2012.2.0.0)
 2.  Manage multiple GHC and Haskell Platform versions, easily toggle between them with 
     *update-alternatives --config*.
 3.  Upgrade to new version of Haskell without overwriting or deleting the previous.  
