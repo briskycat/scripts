@@ -1,7 +1,8 @@
-##How to install Haskell Platform with Debian update-alternatives
+##How to install Haskell Platform from source with Debian update-alternatives
 
-Works with Debian, Ubuntu, or any derivative that has the Debian *update-alternatives*
-command available.
+Scripts to make manual/source installation and management of multiple versions of GHC 
+and Haskell Platform easy.  Bypasses the Debian repos.  Works with Debian, Ubuntu, or 
+any derivative that has the Debian *update-alternatives* tool available.
 
 ###Why?
 
