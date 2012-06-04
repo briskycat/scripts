@@ -5,15 +5,20 @@ command available.
 
 ###Why?
 
-1.  keep the entire platform together in a single directory like 
-    /opt/haskell/platform/2012.2.0.0, a direct install vomits files all throughout 
-    /usr/bin, /usr/lib, and /usr/share.  
-2.  install and easily toggle between multiple versions (which you can't do when
-    installing it from the deb repo)
-3.  easily uninstall - just `update-alternatives --remove ghc_` then `rm -rf 
-    /opt/haskell/platform/2012.2.0.0`
-4.  get use to using the wonderful `update-alternatives` with everything.  Works great
-    with Java, Scala (Typesafe Stack), etc. 
+1.  Debian/Ubuntu/etc repos seem to consistently lag the current version of Haskell 
+    platform.  Though they might be getting better about this now, judging from 
+    http://packages.ubuntu.com/haskell-platform and 
+    http://packages.debian.org/haskell-platform)
+2.  Manage multiple GHC and Haskell Platform versions, easily toggle between them with 
+    *update-alternatives --config*.
+3.  Keep all files of GHC and Haskell Platform together in a  single location like 
+    /opt/haskell/, instead of spread out over /usr/bin, /usr/lib, and /usr/share.
+4.  Easily uninstall with *update-alternatives --remove-all* (script included), and 
+    *rm -rf /opt/haskell*.
+5.  Run as system user instead of adding /opt/haskell to your .profile.
+6.  Get used to using *update-alternatives*, it's a great tool that makes managing 
+    manually installed, multi-version software painless.  Java and Scala (via Typesafe 
+    Stack) both work equally well with it.
 
 ###I.  Install GHC
 
