@@ -1,19 +1,9 @@
 #!/usr/bin/env bash -
 
-# uninstall Typesafe Stack alternative for update-alternatives --config java
+# uninstall the haskell platform from update-alternatives (assuming you used the
+#   correspondig haskell-platform-install.sh script to install platform.
+# WARNING - this will not uninstall ghc from the system, it will still be in /opt or 
+#   or wherever you built it.  However, it will install all ghc's from 
+#   update-alternatives.
 
-
-update-alternatives --remove-all scala
-update-alternatives --remove-all classes
-update-alternatives --remove-all fsc
-update-alternatives --remove-all g8
-update-alternatives --remove-all giter8.properties
-update-alternatives --remove-all jansi.jar
-update-alternatives --remove-all sbt
-update-alternatives --remove-all sbt.bat
-update-alternatives --remove-all sbt-launch.jar
-update-alternatives --remove-all sbt-launch-lib.bash
-update-alternatives --remove-all scalac
-update-alternatives --remove-all scaladoc
-update-alternatives --remove-all scalap
-update-alternatives --remove-all man.scala
+update-alternatives --remove-all cabal

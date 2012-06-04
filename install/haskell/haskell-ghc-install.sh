@@ -9,9 +9,6 @@ MAN="/usr/share/man"
 GHC="/opt/haskell/ghc/7.4.1"
 GHC_BIN="$GHC/bin"
 GHC_MAN="$GHC/share/man"
-PLATFORM="/opt/haskell/platform/2012.2.0.0"
-PLATFORM_BIN="$PLATFORM/bin"
-PLATFORM_MAN="$PLATFORM/man"
 PRIORITY_LEVEL=1200
 
 update-alternatives --install $BIN/ghc ghc $GHC_BIN/ghc $PRIORITY_LEVEL \

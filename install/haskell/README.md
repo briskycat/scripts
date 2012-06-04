@@ -38,7 +38,15 @@ command available.
 7.  sudo sh [haskell-platform-install.sh][4]
 8.  cabal update
 
+###III. Troubleshooting
+
+If any errors occurred, check these pages:
+
+1.  [GHC build errors][5]
+2.  [Platform build errors][6] (check prereqs)
+
 [1]: http://www.haskell.org/ghc/download\_ghc\_7\_4\_1#x86linux
 [2]: https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-ghc-install.sh 
 [3]: http://hackage.haskell.org/platform/linux.html
 [4]: https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-platform-install.sh
+
