@@ -3,9 +3,10 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-JVM="/usr/lib/jvm"
-JDK="jdk1.6.0_32"
-#JDK="jdk1.7.0_04"
+JVM="/opt/java/jdk"
+#JVM="/usr/lib/jvm"
+JDK="1.6.0_32"
+#JDK="jdk1.6.0_32"
 JDK_BIN="$JDK/bin"
 JDK_DB_BIN="$JDK/db/bin"
 JDK_MAN="$JDK/man"

@@ -20,4 +20,4 @@ update-alternatives --install $BIN/ghc ghc $GHC_BIN/ghc $PRIORITY_LEVEL \
  --slave $BIN/hsc2hs hsc2hs $GHC_BIN/hsc2hs \
  --slave $BIN/runghc runghc $GHC_BIN/runghc \
  --slave $BIN/runhaskell runhaskell $GHC_BIN/runhaskell \
- --slave $MAN/man10 man.ghc $GHC_MAN/man1
+ --slave $MAN/man9 man.ghc $GHC_MAN/man1
