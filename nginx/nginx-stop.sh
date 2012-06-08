@@ -1,3 +1,5 @@
 #!/usr/bin/env bash -
 
-/etc/init.d/nginx stop
+# "stop" sends -TERM and nginx exits immediately.
+#sudo -U www-data /etc/init.d/nginx -s stop
+/etc/init.d/nginx -s stop
