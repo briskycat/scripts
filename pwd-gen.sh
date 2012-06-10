@@ -3,7 +3,8 @@
 
 #Here's a useful one-liner to create a strong password in Linux:
 
-cat /usr/share/dict/words|egrep -v "é|'s$|[Åå]|[Øø]"|shuf --random-source=/dev/random -n4
+#cat /usr/share/dict/words|egrep -v "é|'s$|[Åå]|[Øø]"|shuf --random-source=/dev/random -n4
+#egrep -v "é|'s$|[Åå]|[Øø]" /usr/share/dict/words|shuf --random-source=/dev/random -n4
 
 # This uses the dictionary /usr/share/dict/words and skips all the words containing 
 # characters like é, å, ø and all those ending in 's. The resulting word list has 
@@ -22,3 +23,15 @@ cat /usr/share/dict/words|egrep -v "é|'s$|[Åå]|[Øø]"|shuf --random-source=/
 
 # These are surprisingly easy to remember. I use a 7-word passphrase for the most 
 # important things and it didn't take me more than a day or two to learn it.
+
+#----------------------------------------------------------------------------------------#
+
+# Why blacklist rather than whitelist?
+
+    LC_ALL=C egrep '^[[:lower:]]{4,8}$' /usr/share/dict/words |
+    shuf --random-source=/dev/random -n4 |
+    fmt
+
+# That's picking from ~35,000 words, which I think is still good enough but avoids ending 
+# up with "interpreters incredibility disciplinary constitutionality". (I need the C locale 
+# to stop this old GNU grep being painfully slow.)
