@@ -1,0 +1,4 @@
+*.asc
+*.md5
+*.sha*
+bin.list
