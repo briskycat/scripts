@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -
+#!/usr/bin/env bash
+
 # search current directory recursively for case-insenstive term
 
 args="$@"
