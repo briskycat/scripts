@@ -2,12 +2,12 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-ANT="/opt/apache/ant/1.8.4"
+ANT="/opt/apache/ant/1.8.2"
 ANT_BIN="$ANT/bin"
 #ANT_MAN="$ANT/man"  (no man pages)
-PRIORITY_LEVEL=1200
+PRIORITY_LEVEL=1400
 
-update-alternatives --install $BIN/ant ant $ANT_BIN/ant $PRIORITY_LEVEL \
+sudo update-alternatives --install $BIN/ant ant $ANT_BIN/ant $PRIORITY_LEVEL \
  --slave $BIN/antRun antRun $ANT_BIN/antRun
 
 
