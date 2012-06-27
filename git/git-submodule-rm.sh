@@ -55,18 +55,28 @@ fi
 echo "Rebasing HEAD ..."
 git rebase HEAD
 
-echo "Executing 'git rm $1' ..."
-git rm -rf $1
+if [ $? -ne 0 ]; then
 
-echo "Executing 'rm -rf $1' ..."
-rm -rf $1
+    echo "Rebase failed, aborting git-submodule-rm.sh ..."
+    break
 
-echo "Executing 'git config -f .gitmodules --remove-section submodule.$1' ..."
-git config -f .gitmodules --remove-section submodule.$1
+else 
 
-echo "Executing 'git config -f .git/config --remove-section submodule.$1' ..."
-git config -f .git/config --remove-section submodule.$1
+    echo "Executing 'git rm $1' ..."
+    git rm -rf $1
 
-echo "Adding and Committing ..."
-git commit -am "removed submodule $1"
-echo "Done.  Removed submodule $1 ..."
+    echo "Executing 'rm -rf $1' ..."
+    rm -rf $1
+
+    echo "Executing 'git config -f .gitmodules --remove-section submodule.$1' ..."
+    git config -f .gitmodules --remove-section submodule.$1
+
+    echo "Executing 'git config -f .git/config --remove-section submodule.$1' ..."
+    git config -f .git/config --remove-section submodule.$1
+
+    #echo "Adding and Committing ..."
+    #git commit -am "removed submodule $1"
+    echo "Done.  Manually commit by running 'git commit -am 'removed submodule $1'"
+    #echo "Done.  Removed submodule $1 ..."
+
+fi
