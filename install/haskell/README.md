@@ -39,9 +39,12 @@ any derivative that has the Debian `update-alternatives` tool available.
 6.  `sudo sh haskell-ghc-install.sh` [1][2] (before running, make sure the last line in the 
     script does not overwrite `/usr/share/man/man10`.  If there is already a `man10` in
     `/usr/share/man` then change the line in the script to `man11` or something else safe.
-7.  test:  
+7.  test:
+
     `cd`
+
     `ghc --version`
+
     `man ghc`
 
 ###II.  Install Haskell Platform
