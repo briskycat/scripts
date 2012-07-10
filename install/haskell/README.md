@@ -32,7 +32,7 @@ any derivative that has the Debian `update-alternatives` tool available.
 0.  GHC must be installed before Haskell Platform can be, so...
 1.  download [GHC][1] to a temp dir (the binary, not the source, unless you specifically need to build from 
     source and it's worth the long build)
-2.  `tar -xvf ghc-7.4.1-x86\_64-unknown-linux.tar.bz`
+2.  `tar -xvf ghc-7.4.1-x86_64-unknown-linux.tar.bz`
 3.  `cd ghc-7.4.1`
 4.  `./configure --prefix=/opt/haskell/ghc/7.4.1` (or wherever you want to install GHC)
 5.  `sudo make install`
