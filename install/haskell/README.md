@@ -37,8 +37,9 @@ any derivative that has the Debian `update-alternatives` tool available.
 4.  `./configure --prefix=/opt/haskell/ghc/7.4.1` (or wherever you want to install GHC)
 5.  `sudo make install`
 6.  `sudo sh haskell-ghc-install.sh` ([see script][2]) (before running, make sure the last line in the 
-    script does not overwrite `/usr/share/man/man10`.  If there is already a `man10` in
-    `/usr/share/man` then change the line in the script to `man11` or something else safe.
+    script does not overwrite `/usr/share/man/man9`.  If there is already a `man9` in
+    `/usr/share/man` then change the line in the script to `man11` or something else safe:
+    `--slave $MAN/man9 man.ghc $GHC_MAN/man1`
 7.  test:
 
     `cd`
