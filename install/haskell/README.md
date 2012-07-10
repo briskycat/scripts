@@ -53,7 +53,7 @@ any derivative that has the Debian `update-alternatives` tool available.
 2.  `tar -xvf haskell-platform-2012.2.0.0.tar.gz`
 3.  `cd haskell-platform-2012.2.0.0`
 4.  `./configure --prefix=/opt/haskell/platform/2012.2.00`
-5.  `sudo make`j
+5.  `sudo make`
 6.  `sudo make install`
 7.  `sudo sh [haskell-platform-install.sh][4]`
 8.  test: 
