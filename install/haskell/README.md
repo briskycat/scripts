@@ -16,9 +16,9 @@ any derivative that has the Debian `update-alternatives` tool available.
     the previous.  If this causes regressions in your apps, easily roll back to the prior 
     working version with a simple `update-alternatives --config`.
 4.  Keep all files of GHC and Haskell Platform together in a  single location like 
-    `/opt/haskell/`, instead of spread out over `/usr/bin`, `/usr/lib`, and `/usr/share`.
-    The files are kept in `/opt/haskell/` and `update-alternatives` soft links them to 
-    their system directories.
+    `/opt/haskell/ghc` `/opt/haskell/platform`, instead of spread out over `/usr/bin`, 
+    `/usr/lib`, and `/usr/share`.  The files are kept in `/opt/haskell/` and 
+    `update-alternatives` soft links them to their system directories.
 5.  Easily uninstall with `update-alternatives --remove-all` (script included), and 
     `rm -rf /opt/haskell`.
 6.  Run haskell via system PATH instead of user PATH (eg, no need to add 
