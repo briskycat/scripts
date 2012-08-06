@@ -3,7 +3,7 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-SCALA="/opt/scala/bin/2.9.2/"
+SCALA="/opt/scala/bin/2.9.2"
 SCALA_BIN="$SCALA/bin"
 SCALA_MAN="$SCALA/man"
 PRIORITY_LEVEL=1200
