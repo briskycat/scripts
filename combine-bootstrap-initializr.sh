@@ -16,7 +16,7 @@
 #   bootstrap js files.
 
 INITIALIZR="./initializr"
-BOOTSTRAP="./bootstrap"
+BOOTSTRAP="./submodules/bootstrap"
 TEMP="./temp"
 TARGET="./target"
 
@@ -87,3 +87,6 @@ cp -r $TEMP/less/* $TARGET/less/bootstrap/
 #cp -r $TEMP/img/* $TARGET/img/
 #cp -r $TEMP/js/* $TARGET/js/libs/bootstrap/
 #cp -r $TEMP/less/* $TARGET/less/bootstrap/
+
+#6.  backup this script to scripts repo
+cp combine-bootstrap-initializr.sh ~/bin/scripts
