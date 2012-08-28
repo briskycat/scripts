@@ -1,10 +1,12 @@
+#!/bin/bash -
+
 #!/usr/bin/env bash -
 
 #shopt -s dotglob
 #setopt extendedglob
 
 LIFT="./src/lift_25_sbt/scala_29/lift_blank"
-THEME="./theme"
+THEME="./themes/css"
 TARGET="./lift_blank"
 
 while getopts "lift:theme:target"\
@@ -27,14 +29,14 @@ fi
 #1.  backup lift_blank/src/main/webapp/index.html
 if [ ! -d "$TARGET/src/main/webapp/templates-hidden/archive" ]; then
     mkdir -p $TARGET/src/main/webapp/templates-hidden/archive
-    mv -f $TARGET/src/main/webapp/index.html $TARGET/src/main/webapp/templates-hidden/archive
+    mv -f $TARGET/src/main/webapp/index.html $TARGET/src/main/webapp/templates-hidden/archive/index.html.lift.original
 fi
 
 #2.  copy theme into lift project
 cp -r $THEME/* $TARGET/src/main/webapp/
-if [ ! -d "$TARGET/src/main/webapp/css" ]; then
-    mkdir -p "$TARGET/src/main/webapp/css"
-fi
+#if [ ! -d "$TARGET/src/main/webapp/css" ]; then
+#    mkdir -p "$TARGET/src/main/webapp/css"
+#fi
 
 #3.  move build to sbt unmanaged jar directory
 #  https://github.com/harrah/xsbt/wiki/Getting-Started-Library-Dependencies
