@@ -21,4 +21,4 @@ iptables-save > /etc/iptables.rules
 
 # to have this configuration added at startup, make sure /etc/network/interfaces has 
 # the following line immediately after the 'iface eth0' line:
-pre-up iptables-restore < /etc/iptables.rules
+#pre-up iptables-restore < /etc/iptables.rules
