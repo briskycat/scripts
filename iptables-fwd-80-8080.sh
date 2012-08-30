@@ -18,3 +18,7 @@ iptables -t nat -A OUTPUT -o lo -p tcp --dport 80 -j REDIRECT --to-port 8080
 iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443
 iptables -t nat -A OUTPUT -o lo -p tcp --dport 443 -j REDIRECT --to-port 8443
 iptables-save > /etc/iptables.rules
+
+# to have this configuration added at startup, make sure /etc/network/interfaces has 
+# the following line immediately after the 'iface eth0' line:
+pre-up iptables-restore < /etc/iptables.rules
