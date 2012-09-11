@@ -4,19 +4,20 @@
 BIN="/usr/bin"
 MAN="/usr/share/man"
 JVM="/opt/java/jdk"
-JDK="1.7.0_06"
+JDK="1.6.0_35"
 JDK_BIN="$JDK/bin"
 JDK_DB_BIN="$JDK/db/bin"
 JDK_MAN="$JDK/man"
-PRIORITY_LEVEL=1100
+PRIORITY_LEVEL=1200
 
-# install Oracle JDK7 alternative for update-alternatives --config java
+# install Oracle JDK6 alternative for update-alternatives --config java
 
 update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_LEVEL \
 --slave $BIN/appletviewer appletviewer $JVM/$JDK_BIN/appletviewer \
 --slave $BIN/apt apt $JVM/$JDK_BIN/apt \
 --slave $BIN/ControlPanel ControlPanel $JVM/$JDK_BIN/ControlPanel \
 --slave $BIN/extcheck extcheck $JVM/$JDK_BIN/extcheck \
+--slave $BIN/HtmlConverter HtmlConverter $JVM/$JDK_BIN/HtmlConverter \
 --slave $BIN/idlj idlj $JVM/$JDK_BIN/idlj \
 --slave $BIN/jar jar $JVM/$JDK_BIN/jar \
 --slave $BIN/jarsigner jarsigner $JVM/$JDK_BIN/jarsigner \
@@ -24,11 +25,9 @@ update-alternatives --install $BIN/java java $JVM/$JDK_BIN/java $PRIORITY_LEVEL 
 --slave $BIN/javadoc javadoc $JVM/$JDK_BIN/javadoc \
 --slave $BIN/javah javah $JVM/$JDK_BIN/javah \
 --slave $BIN/javap javap $JVM/$JDK_BIN/javap \
---slave $BIN/java-rmi.cgi java-rmi.cgi $JVM/$JDK_BIN/java-rmi.cgi \
 --slave $BIN/javaws javaws $JVM/$JDK_BIN/javaws \
 --slave $BIN/jconsole jconsole $JVM/$JDK_BIN/jconsole \
 --slave $BIN/jcontrol jcontrol $JVM/$JDK_BIN/jcontrol \
---slave $BIN/jcmd jcmd $JVM/$JDK_BIN/jcmd \
 --slave $BIN/jdb jdb $JVM/$JDK_BIN/jdb \
 --slave $BIN/jhat jhat $JVM/$JDK_BIN/jhat \
 --slave $BIN/jinfo jinfo $JVM/$JDK_BIN/jinfo \
