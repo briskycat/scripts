@@ -7,3 +7,4 @@ CHECKSUM="$SRC/$VER.md5"
 
 wget --no-check-certificate $SCALA
 wget --no-check-certificate $CHECKSUM
+md5sum -c $VER.md5
