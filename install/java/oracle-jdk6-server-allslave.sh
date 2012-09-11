@@ -2,11 +2,12 @@
 # tested on Ubuntu 12.04 only
 JVM_TAR="/usr/bin"
 JVM_SRC="/opt/java/jdk"
-JDK_VER="$JVM_SRC/1.6.0_35
+JDK_VER="$JVM_SRC/1.6.0_35"
 JDK_SRC="$JDK_VER/bin"
 JDK_DB_SRC="$JDK_VER/db/bin"
 MAN_SRC="$JDK_VER/man/man1"
 MAN_TAR="/usr/share/man/man10"
+PRIORITY_LEVEL="1200"
 
 # install Oracle JDK6 alternative for update-alternatives --config java
 
