@@ -1,3 +1,5 @@
 #!/usr/bin/env bash -
 
-wget --no-check-certificate https://github.com/Lifty/lifty/tarball/master -O - | tar xvz
+LIFTY='https://github.com/Lifty/lifty/tarball/master'
+
+wget --no-check-certificate $LIFTY -O - | tar xvz
