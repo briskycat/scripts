@@ -15,6 +15,8 @@
 # lift_25_cloudbees/project/plugins.sbt must be manually merged into 
 # lift_25_cloudbees/project/build/LiftProject.scala, and both 
 # build.properties and LiftProject.scala must be updated for Lift 2.5.
+# Boot.scala remains unchanged, the default lift_25_sbt Boot.scala is effectively the
+# same as cloudbees's Boot.scala.
 # 
 
 cp -r lift_25_sbt/scala_29/lift_basic lift_25_cloudbees
