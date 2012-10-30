@@ -5,6 +5,7 @@
 #iptables -v -I INPUT -m mark --mark 1 -j DROP
 
 # http://chiralsoftware.com/linux-system-administration/ubuntu-firewall-iptables.seam
+iptables --flush
 iptables -I INPUT 1 -i lo -j ACCEPT
 iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
