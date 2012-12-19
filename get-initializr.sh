@@ -3,6 +3,7 @@
 # Download zip archive of HTML5 Boilerplate + Bootstrap 2.0 from Initializr.com
 # Default Initializr build = css.  Specify less using -s or -style cmdline arg:
 # sh get-initializr.sh -s less; sh get-initializr.sh -style less
+
 STYLE="css"
 
 while getopts "s:style" optionName; do
