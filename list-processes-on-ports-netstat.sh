@@ -6,3 +6,4 @@
 
 netstat -lnp
 #netstat -tp
+#netstat -atulpen
