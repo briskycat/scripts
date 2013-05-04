@@ -7,3 +7,6 @@
 netstat -lnp
 #netstat -tp
 #netstat -atulpen
+#netstat -an | grep :80
+#netstat -tulpn | grep :80
+
