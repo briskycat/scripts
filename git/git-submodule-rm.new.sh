@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# http://git-scm.com/docs/git-submodule
+# http://git-scm.com/docs/git-rm.html
 # http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/
 # http://stackoverflow.com/questions/16160993/moving-a-git-working-copy-containing-submodules/16161950#16161950
 
