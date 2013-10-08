@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -
+#!/usr/bin/env bash
 
 # example argv:  kurtosis@192.168.1.21:/home/kurtosis/Documents/Rainbow/* .
 

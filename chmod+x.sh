@@ -4,5 +4,5 @@ args="$@"
 
 for arg in $args
 do 
-    sudo chmod +x "$arg"
+    sudo chmod 754 "$arg"
 done
