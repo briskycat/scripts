@@ -4,17 +4,37 @@
 # http://git-scm.com/docs/git-rm.html
 # http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/
 # http://stackoverflow.com/questions/16160993/moving-a-git-working-copy-containing-submodules/16161950#16161950
+#
+# http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule/
+#
+# Adam Sharp
+# Aug 21, 2013
+#
+# Usage: Add it to your PATH and `git remove-submodule path/to/submodule`.
+#
+# Does the inverse of `git submodule add`:
+#  1) `deinit` the submodule
+#  2) Remove the submodule from the index and working directory
+#  3) Clean up the .gitmodules file (won't be needed with 1.8.5!)
+#
 
-if [ -z "$1" ]; then
- 
-    echo "No command-line arguments.  Aborting..."
-    echo "Please specify the submodule to remove."
-    echo "Usage: sh git-rm-submodule.new.sh submodules/module-name"
-    exit;     
+submodule_name=$(echo "$1" | sed 's/\/$//'); shift
 
+exit_err() {
+  [ $# -gt 0 ] && echo "fatal: $*" 1>&2
+  exit 1
+}
+
+if git submodule status "$submodule_name" >/dev/null 2>&1; then
+  git submodule deinit -f "$submodule_name"
+  git rm -rf "$submodule_name"
+
+  git config -f .gitmodules --remove-section "submodule.$submodule_name"
+  if [ -z "$(cat .gitmodules)" ]; then
+    git rm -f .gitmodules
+  else
+    git add .gitmodules
+  fi
 else
-
-    echo "Executing 'git submodule deinit $1' ..."
-    git submodule deinit $1
-
+  exit_err "Submodule '$submodule_name' not found"
 fi
