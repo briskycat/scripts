@@ -13,5 +13,8 @@ if [ $EXPECTED_ARGS -ne $# ]; then
     exit $E_BADARGS
 else
     #sed -i 's/$1/$2/g' *
-    find . -type f -not -name “.*” -print | xargs sed -i ‘s/$1/$2/g’
+    echo "find . -type f -not -name \“.*\” -print | xargs sed -i 's/$1/$2/g'"
+    #find . -type f -not -name “.*” -print | xargs sed -i 's|$1|$2|g'
+    find . -type f -name “*.html” -print | xargs sed -i 's/dist\/js/dist\/scripts/g'
+    #find ./ -type f -exec sed -i 's/apple/orange/g' {} \;
 fi
