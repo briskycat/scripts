@@ -2,6 +2,9 @@
 
 # This script reformats Banshee playlists for mpd.  All that must be done is to replace
 # the relative path to the music library with the full path from /.
+# http://ubuntuforums.org/showthread.php?t=1938373&p=11783915
+# https://wiki.archlinux.org/index.php/Music_Player_Daemon 
+# http://ubuntuforums.org/showthread.php?t=5194&highlight=mpdconf
 
 # Usage:   sh normalize-m3u.sh playlistname.m3u
 
@@ -17,5 +20,4 @@ else
     #echo "find . -type f -print0 | xargs -0 sed -i 's/\.\.\/\.\.\/Library/\/home\/kurtosis\/Music\/Library/g'"
     echo "executing...  sed -i.bak 's/..\/Library/\/home\/kurtosis\/Music\/Library/g' $1"
     sed -i.bak 's/..\/Library/\/home\/kurtosis\/Music\/Library/g' $1
-    
 fi
