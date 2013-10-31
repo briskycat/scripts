@@ -20,4 +20,6 @@ else
     #echo "find . -type f -print0 | xargs -0 sed -i 's/\.\.\/\.\.\/Library/\/home\/kurtosis\/Music\/Library/g'"
     echo "executing...  sed -i.bak 's/..\/Library/\/home\/kurtosis\/Music\/Library/g' $1"
     sed -i.bak 's/..\/Library/\/home\/kurtosis\/Music\/Library/g' $1
+    #echo "executing...  sed -i.bak 's/\/home\/kurtosis\/Mus\/home\//\/home\//g' $1"
+    #sed -i.bak 's/\/home\/kurtosis\/Mus\/home\//\/home\//g' $1
 fi
