@@ -17,7 +17,7 @@
 #     for details) 
 # 6.  for future versions of Rust, repeat these steps but change the version in 
 #     ./config prefix and the VER value in this file.  You can install multiple
-#     versions simultaneously and use update-alternatives to toggle between acitive
+#     versions simultaneously and use update-alternatives to toggle between active
 #     versions.
 
 HOME="/opt/rust"
