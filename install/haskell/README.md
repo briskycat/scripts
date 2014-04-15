@@ -77,6 +77,9 @@ Optionally, install XMonad using a similar method.  However, instead of download
 source from a website, build it with Cabal into /opt/haskell/xmonad:
 
 0.  `cd ~`
+0.  get latest version of xmonad and xmonad-contrib
+    * `cabal info xmonad`
+    * `cabal info xmonad-contrib`
 1.  `sudo cabal install xmonad --prefix=/opt/haskell/xmonad/$VER`
 1.  `sudo cabal install xmonad-contrib --prefix=/opt/haskell/xmonad-contrib/$VER`
 2.  `sudo sh xmonad-install.sh`
