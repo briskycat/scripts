@@ -11,11 +11,11 @@ XMONAD_VER="0.11"
 XMONAD="xmonad-$XMONAD_VER"
 CONTRIB_VER="0.11.2"
 CONTRIB="xmonad-contrib-$CONTRIB_VER"
-SRC="/opt/haskell/"
+SRC="/opt/haskell"
 XMONAD_SRC="$SRC/xmonad/$XMONAD_VER"
 CONTRIB_SRC="$SRC/xmonad-contrib/$CONTRIB_VER"
-XMONAD_LIB="$CONTRIB_LIB/lib/$XMONAD"
-CONTRIB_LIB="$CONTRIB_LIB/lib/$CONTRIB"
+XMONAD_LIB="$CONTRIB_SRC/lib/$XMONAD"
+CONTRIB_LIB="$CONTRIB_SRC/lib/$CONTRIB"
 CONTRIB_BIN="$CONTRIB_SRC/bin"
 CONTRIB_SHARE="$CONTRIB_SRC/share"
 CONTRIB_MAN="$CONTRIB_SRC/share/$XMONAD/man"
@@ -23,8 +23,8 @@ PRIORITY_LEVEL=1200
 
 # both commands below require script run under sudo or will fail.
 
-# cabal install xmonad --prefix=$XMONAD_SRC
-# cabal install xmonad-contrib --prefix=$CONTRIB_SRC
+# cabal install xmonad --prefix=$XMONAD_SRC --global
+# cabal install xmonad-contrib --prefix=$CONTRIB_SRC --global
 
 update-alternatives --install $BIN/xmonad xmonad $CONTRIB_BIN/xmonad $PRIORITY_LEVEL \
   --slave $LIB/$XMONAD xmonad.lib $XMONAD_LIB \
