@@ -23,8 +23,8 @@ PRIORITY_LEVEL=1200
 
 # both commands below require script run under sudo or will fail.
 
-# cabal install xmonad --prefix=$XMONAD_SRC --global
-# cabal install xmonad-contrib --prefix=$CONTRIB_SRC --global
+# cabal install xmonad --prefix=$XMONAD_SRC 
+# cabal install xmonad-contrib --prefix=$CONTRIB_SRC 
 
 update-alternatives --install $BIN/xmonad xmonad $CONTRIB_BIN/xmonad $PRIORITY_LEVEL \
   --slave $LIB/$XMONAD xmonad.lib $XMONAD_LIB \
