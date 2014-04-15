@@ -71,10 +71,24 @@ Platform release is [designed to work with a specific version of GHC][5] (scroll
 to the chart showing the matching version of GHC for each platform.  The latest platform
 2012.2.0.0 pairs with GHC 7.4.1).
 
-[1]: http://www.haskell.org/ghc/download\_ghc\_7\_4\_1#x86linux
-[2]: https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-ghc-install.sh 
-[3]: http://hackage.haskell.org/platform/linux.html
-[4]: https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-platform-install.sh
-[5]: http://www.vex.net/~trebla/haskell/haskell-platform.xhtml
-[6]: https://github.com/byrongibson/scripts/tree/master/install/java
-[7]: https://github.com/byrongibson/scripts/tree/master/install/scala 
+###IV.  XMonad
+
+Optionally, install XMonad using a similar method.  However, instead of downloading the
+source from a website, build it with Cabal into /opt/haskell/xmonad:
+
+0.  `cd ~`
+1.  `sudo cabal install xmonad --prefix=/opt/haskell/xmonad/$VER`
+1.  `sudo cabal install xmonad-contrib --prefix=/opt/haskell/xmonad-contrib/$VER`
+2.  `sudo sh xmonad-install.sh`
+3.  [Set up XMonad][10] as you would for a globally installed version. 
+
+[1]:http://www.haskell.org/ghc/download\_ghc\_7\_4\_1#x86linux
+[2]:https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-ghc-install.sh 
+[3]:http://hackage.haskell.org/platform/linux.html
+[4]:https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-platform-install.sh
+[5]:http://www.vex.net/~trebla/haskell/haskell-platform.xhtml
+[6]:https://github.com/byrongibson/scripts/tree/master/install/java
+[7]:https://github.com/byrongibson/scripts/tree/master/install/scala 
+[8]:http://www.haskell.org/haskellwiki/Xmonad/Using_xmonad_in_Gnome
+[9]:http://www.haskell.org/haskellwiki/Xmonad/Using_xmonad_in_Unity_2D
+[10]:http://www.haskell.org/haskellwiki/Xmonad
