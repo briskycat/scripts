@@ -30,6 +30,9 @@ any derivative that has the Debian `update-alternatives` tool available.
 
 ###I.  Install GHC
 
+*Note:  using older versions here, substitute later versions as necessary, make sure to use the specific GHC
+version your Platform version requires.*
+
 0.  GHC must be installed before Haskell Platform can be, so...
 1.  download [GHC][1] to a temp dir (the binary, not the source, unless you specifically need to build from 
     source and it's worth the long build)
