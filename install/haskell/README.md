@@ -82,7 +82,7 @@ source from a website, build it with Cabal into /opt/haskell/xmonad:
     * `cabal info xmonad-contrib`
 1.  Build and install both to `/opt`, using the version as part of the path.  This makes it easy 
     to add future releases side-by-side with this one, each in its own versioned path, and swap 
-    between them, or rollback if necessary, easily using `update-alternatives --config xmonad`.
+    between them, or rollback if necessary, using `update-alternatives --config xmonad`.
     * `sudo cabal install xmonad --prefix=/opt/haskell/xmonad/$VER`
     * `sudo cabal install xmonad-contrib --prefix=/opt/haskell/xmonad-contrib/$VER`
 2.  Edit xmonad-install.sh, change the XMONAD\_VER and CONTRIB\_VER to correct versions from #2. 
