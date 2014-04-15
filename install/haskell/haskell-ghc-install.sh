@@ -6,7 +6,7 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-GHC="/opt/haskell/ghc/7.4.1"
+GHC="/opt/haskell/ghc/7.6.3"
 GHC_BIN="$GHC/bin"
 GHC_MAN="$GHC/share/man"
 PRIORITY_LEVEL=1200
@@ -19,5 +19,6 @@ update-alternatives --install $BIN/ghc ghc $GHC_BIN/ghc $PRIORITY_LEVEL \
  --slave $BIN/hpc hpc $GHC_BIN/hpc \
  --slave $BIN/hsc2hs hsc2hs $GHC_BIN/hsc2hs \
  --slave $BIN/runghc runghc $GHC_BIN/runghc \
- --slave $BIN/runhaskell runhaskell $GHC_BIN/runhaskell \
  --slave $MAN/man9 man.ghc $GHC_MAN/man1
+
+#--slave $BIN/runhaskell runhaskell $GHC_BIN/runhaskell \
