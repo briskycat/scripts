@@ -40,7 +40,7 @@ version your Platform version requires.*
 3.  `cd ghc-7.4.1`
 4.  `./configure --prefix=/opt/haskell/ghc/7.4.1` (or wherever you want to install GHC)
 5.  `sudo make install`
-6.  `sudo sh haskell-ghc-install.sh` ([see script][2]) (before running, make sure the last line in the 
+6.  `sudo sh ghc-install.sh` ([see script][2]) (before running, make sure the last line in the 
     script does not overwrite `/usr/share/man/man9`.  If there is already a `man9` in
     `/usr/share/man` then change the line in the script to `man11` or something else safe:
     `--slave $MAN/man9 man.ghc $GHC_MAN/man1`
@@ -57,7 +57,7 @@ version your Platform version requires.*
 4.  `./configure --prefix=/opt/haskell/platform/2012.2.00`
 5.  `sudo make`
 6.  `sudo make install`
-7.  `sudo sh haskell-platform-install.sh` ([see script][4])
+7.  `sudo sh platform-install.sh` ([see script][4])
 8.  test: 
     * `which cabal`
     * `cabal update`
@@ -86,16 +86,17 @@ source from a website, build it with Cabal into /opt/haskell/xmonad:
     * `sudo cabal install xmonad --prefix=/opt/haskell/xmonad/$VER`
     * `sudo cabal install xmonad-contrib --prefix=/opt/haskell/xmonad-contrib/$VER`
 2.  Edit xmonad-install.sh, change the XMONAD\_VER and CONTRIB\_VER to correct versions from #2. 
-2.  `sudo sh xmonad-install.sh`
+2.  `sudo sh [xmonad-install.sh][11]`
 3.  [Set up XMonad][10] as you would for a globally installed version. 
 
 [1]:http://www.haskell.org/ghc/download\_ghc\_7\_4\_1#x86linux
-[2]:https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-ghc-install.sh 
+[2]:https://github.com/byrongibson/scripts/blob/master/install/haskell/ghc-install.sh 
 [3]:http://hackage.haskell.org/platform/linux.html
-[4]:https://github.com/byrongibson/scripts/blob/master/install/haskell/haskell-platform-install.sh
+[4]:https://github.com/byrongibson/scripts/blob/master/install/haskell/platform-install.sh
 [5]:http://www.vex.net/~trebla/haskell/haskell-platform.xhtml
 [6]:https://github.com/byrongibson/scripts/tree/master/install/java
 [7]:https://github.com/byrongibson/scripts/tree/master/install/scala 
 [8]:http://www.haskell.org/haskellwiki/Xmonad/Using_xmonad_in_Gnome
 [9]:http://www.haskell.org/haskellwiki/Xmonad/Using_xmonad_in_Unity_2D
 [10]:http://www.haskell.org/haskellwiki/Xmonad
+[11]:https://github.com/byrongibson/scripts/blob/master/install/haskell/xmonad-install.sh 
