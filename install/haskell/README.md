@@ -77,11 +77,14 @@ Optionally, install XMonad using a similar method.  However, instead of download
 source from a website, build it with Cabal into /opt/haskell/xmonad:
 
 0.  `cd ~`
-0.  get latest version of xmonad and xmonad-contrib
+0.  Get latest version of xmonad and xmonad-contrib
     * `cabal info xmonad`
     * `cabal info xmonad-contrib`
-1.  `sudo cabal install xmonad --prefix=/opt/haskell/xmonad/$VER`
-1.  `sudo cabal install xmonad-contrib --prefix=/opt/haskell/xmonad-contrib/$VER`
+1.  Build and install both to `/opt`, using the version as part of the path.  This makes it easy 
+    to add future releases side-by-side with this one, each in its own versioned path, and swap 
+    between them easily using `update-alternatives --config xmonad`.
+    * `sudo cabal install xmonad --prefix=/opt/haskell/xmonad/$VER`
+    * `sudo cabal install xmonad-contrib --prefix=/opt/haskell/xmonad-contrib/$VER`
 2.  `sudo sh xmonad-install.sh`
 3.  [Set up XMonad][10] as you would for a globally installed version. 
 
