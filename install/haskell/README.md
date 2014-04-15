@@ -42,12 +42,9 @@ any derivative that has the Debian `update-alternatives` tool available.
     `/usr/share/man` then change the line in the script to `man11` or something else safe:
     `--slave $MAN/man9 man.ghc $GHC_MAN/man1`
 7.  test:
-
-    `cd`
-
-    `ghc --version`
-
-    `man ghc`
+    * `cd`
+    * `ghc --version`
+    * `man ghc`
 
 ###II.  Install Haskell Platform
 
@@ -59,8 +56,8 @@ any derivative that has the Debian `update-alternatives` tool available.
 6.  `sudo make install`
 7.  `sudo sh haskell-platform-install.sh` ([see script][4])
 8.  test: 
-    `which cabal`
-9.  `cabal update`
+    * `which cabal`
+    * `cabal update`
 
 ###III. Troubleshooting
 
@@ -69,7 +66,7 @@ If any errors occurred during build, check that you have [the required dependenc
 Also, make sure you have the correct pairs of GHC and Haskell Platform.  Each Haskell
 Platform release is [designed to work with a specific version of GHC][5] (scroll down
 to the chart showing the matching version of GHC for each platform.  The latest platform
-2012.2.0.0 pairs with GHC 7.4.1).
+2013.2.0.0 pairs with GHC 7.6.3).
 
 ###IV.  XMonad
 
