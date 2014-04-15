@@ -86,7 +86,7 @@ source from a website, build it with Cabal into /opt/haskell/xmonad:
     * `sudo cabal install xmonad --prefix=/opt/haskell/xmonad/$VER`
     * `sudo cabal install xmonad-contrib --prefix=/opt/haskell/xmonad-contrib/$VER`
 2.  Edit xmonad-install.sh, change the XMONAD\_VER and CONTRIB\_VER to correct versions from #2. 
-2.  `sudo sh xmonad-install.sh` [1][11]
+2.  `sudo sh xmonad-install.sh` [[1]][11]
 3.  [Set up XMonad][10] as you would for a globally installed version. 
 
 [1]:http://www.haskell.org/ghc/download\_ghc\_7\_4\_1#x86linux
