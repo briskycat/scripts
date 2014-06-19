@@ -3,11 +3,11 @@
 
 JVM_TAR="/usr/bin"
 JVM_SRC="/opt/java/jdk"
-JDK_VER="$JVM_SRC/1.7.0_07"
+JDK_VER="$JVM_SRC/1.7.0_60"
 JDK_SRC="$JDK_VER/bin"
 JDK_DB_SRC="$JDK_VER/db/bin"
 MAN_SRC="$JDK_VER/man/man1"
-MAN_TAR="/usr/share/man/man10"
+MAN_TAR="/usr/share/man/man11"
 PRIORITY_LEVEL=1100
 
 # install Oracle JDK7 alternative for update-alternatives --config java
