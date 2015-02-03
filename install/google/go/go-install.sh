@@ -14,6 +14,7 @@ update-alternatives --install $BIN/go/bin/go go $GO/$VER/bin/go $PRIORITY_LEVEL 
   --slave $BIN/go/bin/gofmt gofmt $GO/$VER/bin/gofmt \
   --slave $BIN/go/bin/gofmt gofmt $GO/$VER/bin/gofmt \
   --slave $BIN/go/lib/time/update.bash update.bash $GO/$VER/lib/time/update.bash \
+  --slave $BIN/go/misc/benchcmp benchcmp $GO/$VER/misc/benchcmp \
   --slave $BIN/go/pkg/tool/linux_amd64/6a 6a $GO/$VER/pkg/tool/linux_amd64/6a \
   --slave $BIN/go/pkg/tool/linux_amd64/6c 6c $GO/$VER/pkg/tool/linux_amd64/6c \
   --slave $BIN/go/pkg/tool/linux_amd64/6g 6g $GO/$VER/pkg/tool/linux_amd64/6g \
