@@ -6,7 +6,7 @@
 
 BIN="/usr/local"
 GO="/opt/go"
-VER="1.2.2"
+VER="1.4.2"
 PRIORITY_LEVEL=1200
 
 update-alternatives --install $BIN/go/bin/go go $GO/$VER/bin/go $PRIORITY_LEVEL \
