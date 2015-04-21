@@ -16,4 +16,5 @@ update-alternatives --install $BIN/node nodejs $NODE_BIN/node $PRIORITY_LEVEL \
  --slave $BIN/nperf nperf $NODE_BIN/nperf \
  --slave $BIN/idonethis idonethis $NODE_BIN/idonethis \
  --slave $BIN/keybase keybase $NODE_BIN/keybase \
+ --slave $BIN/keybase-installer keybase-installer $NODE_BIN/keybase-installer \
  --slave $MAN/man10 man.nodejs $NODE_MAN/man1
