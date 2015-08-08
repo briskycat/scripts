@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+BIN="/usr/bin"
+MAN="/usr/share/man"
+HG="/opt/hg/3.5"
+HG_BIN="$HG/bin"
+HG_MAN="$HG/share/man"
+PRIORITY_LEVEL=1200
+
+update-alternatives --install $BIN/hg hg $HG_BIN/hg $PRIORITY_LEVEL \
+ --slave $MAN/man17 man.hg1 $HG_MAN/man1 \
+ --slave $MAN/man18 man.hg5 $HG_MAN/man5
