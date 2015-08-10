@@ -6,9 +6,8 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-CABAL="/opt/haskell/cabal/1.22.2.0"
-CABAL_BIN="$CABAL/bin"
-CABAL_LIB="$CABAL/lib"
-PRIORITY_LEVEL=1200
+CABAL="/opt/haskell/cabal"
+CABAL_VER="1.22.2.0"
+CABAL_BIN="$CABAL/$CABAL_VER/bin"
 
 update-alternatives --install $BIN/cabal cabal $CABAL_BIN/cabal $PRIORITY_LEVEL

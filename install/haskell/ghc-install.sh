@@ -7,10 +7,11 @@
 BIN="/usr/bin"
 LIB="/usr/lib"
 MAN="/usr/share/man"
-GHC="/opt/haskell/ghc/7.10.1"
-GHC_BIN="$GHC/bin"
-GHC_LIB="$GHC/lib/ghc-7.10.1"
-GHC_MAN="$GHC/share/man"
+GHC="/opt/haskell/ghc/"
+GHC_VER="7.10.1"
+GHC_BIN="$GHC/$GHC_VER/bin"
+GHC_LIB="$GHC/$GHC_VER/lib/ghc-7.10.1"
+GHC_MAN="$GHC/$GHC_VER/share/man"
 PRIORITY_LEVEL=1200
 
 update-alternatives --install $BIN/ghc ghc $GHC_BIN/ghc $PRIORITY_LEVEL \

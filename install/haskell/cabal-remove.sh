@@ -1,10 +1,13 @@
-#!/usr/bin/env bash -
+#!/usr/bin/env bash
 
-# uninstall ghc from update-alternatives.
-# WARNING - this will not uninstall ghc from the system, it will still be in /opt or 
-#           or wherever you built it.  However, it will install all ghc's from 
-#           update-alternatives.
-# 
+# install haskell platform to the system user via ubuntu update-alternatives,
+# rather than as current user via .profile.  system user in this case = /usr/bin
+# tested on Ubuntu 12.04 only
 
-update-alternatives --remove-all cabal
+BIN="/usr/bin"
+MAN="/usr/share/man"
+CABAL="/opt/haskell/cabal"
+CABAL_VER="1.22.2.0"
+CABAL_BIN="$CABAL/$CABAL_VER/bin"
 
+update-alternatives --remove cabal $CABAL_BIN/cabal

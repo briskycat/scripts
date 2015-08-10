@@ -6,8 +6,9 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-PLATFORM="/opt/haskell/platform/2013.2.0.0"
-PLATFORM_BIN="$PLATFORM/bin"
+PLATFORM="/opt/haskell/platform"
+PLATFORM_VER="2013.2.0.0"
+PLATFORM_BIN="$PLATFORM/$PLATFORM_VER/bin"
 #PLATFORM_MAN="$PLATFORM/share/doc/man" #no man files with platform
 PRIORITY_LEVEL=1200
 
