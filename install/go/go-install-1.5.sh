@@ -10,7 +10,7 @@ GO_VER="1.5rc1"
 GO_BIN="$GO_SRC/$GO_VER/bin"
 GO_TOOL="$GO_SRC/$GO_VER/pkg/tool/linux_amd64"
 GO_MISC="$GO_SRC/$GO_VER/misc"
-PRIORITY_LEVEL=1200
+PRIORITY_LEVEL=1100
 
 update-alternatives --install $BIN/go golang-go $GO_BIN/go $PRIORITY_LEVEL \
   --slave $BIN/godoc golang-doc $GO_BIN/godoc \

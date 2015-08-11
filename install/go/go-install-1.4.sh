@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-BIN="/usr/bin"
-LIB="/usr/lib"
-TOOL="$LIB/pkg/tool/linux_amd64"
+ROOT="/usr/local/go"
+BIN="$ROOT/bin"
+TOOL="$ROOT/pkg/tool/linux_amd64"
 GO_SRC="/opt/go"
 GO_VER="1.4.2"
 GO_BIN="$GO_SRC/$GO_VER/bin"
