@@ -1,54 +1,54 @@
-execve("/usr/sbin/update-alternatives", ["update-alternatives", "--verbose", "--install", "/usr/local/go/bin/go", "go", "/opt/go/1.4.2/bin/go", "1200"], [/* 20 vars */]) = 0
-brk(0)                                  = 0x2577000
+execve("/usr/sbin/update-alternatives", ["update-alternatives", "--install", "/usr/local/go/bin/go", "go", "/opt/go/1.4.2/bin/go", "1200", "--slave", "/usr/local/go/bin/godoc", "godoc", "/opt/go/1.4.2/bin/godoc", "--slave", "/usr/local/go/bin/gofmt", "gofmt", "/opt/go/1.4.2/bin/gofmt", "--slave", "/usr/local/go/pkg/tool/linux_amd"..., ...], [/* 20 vars */]) = 0
+brk(0)                                  = 0x658000
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b1000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97b000
 access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
-fstat(3, {st_mode=S_IFREG|0644, st_size=108098, ...}) = 0
-mmap(NULL, 108098, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6c23896000
+fstat(3, {st_mode=S_IFREG|0644, st_size=108250, ...}) = 0
+mmap(NULL, 108250, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd2ef960000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_mode=S_IFREG|0755, st_size=1807032, ...}) = 0
-mmap(NULL, 3921080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6c232d3000
-mprotect(0x7f6c23487000, 2093056, PROT_NONE) = 0
-mmap(0x7f6c23686000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b3000) = 0x7f6c23686000
-mmap(0x7f6c2368c000, 17592, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6c2368c000
+mmap(NULL, 3921080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd2ef39d000
+mprotect(0x7fd2ef551000, 2093056, PROT_NONE) = 0
+mmap(0x7fd2ef750000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b3000) = 0x7fd2ef750000
+mmap(0x7fd2ef756000, 17592, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef756000
 close(3)                                = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c23895000
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c23894000
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c23893000
-arch_prctl(ARCH_SET_FS, 0x7f6c23894700) = 0
-mprotect(0x7f6c23686000, 16384, PROT_READ) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef95f000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef95e000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef95d000
+arch_prctl(ARCH_SET_FS, 0x7fd2ef95e700) = 0
+mprotect(0x7fd2ef750000, 16384, PROT_READ) = 0
 mprotect(0x609000, 4096, PROT_READ)     = 0
-mprotect(0x7f6c238b3000, 4096, PROT_READ) = 0
-munmap(0x7f6c23896000, 108098)          = 0
-brk(0)                                  = 0x2577000
-brk(0x2598000)                          = 0x2598000
+mprotect(0x7fd2ef97d000, 4096, PROT_READ) = 0
+munmap(0x7fd2ef960000, 108250)          = 0
+brk(0)                                  = 0x658000
+brk(0x679000)                           = 0x679000
 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=7224832, ...}) = 0
-mmap(NULL, 7224832, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6c22bef000
+mmap(NULL, 7224832, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd2eecb9000
 close(3)                                = 0
 openat(AT_FDCWD, "/var/lib/dpkg/alternatives", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
 getdents(3, /* 134 entries */, 32768)   = 4328
 getdents(3, /* 0 entries */, 32768)     = 0
 open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 4
 fstat(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(4, "MemTotal:       65898748 kB\nMemF"..., 1024) = 1024
 close(4)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 close(3)                                = 0
 stat("/var/lib/dpkg/alternatives/aptitude", {st_mode=S_IFREG|0644, st_size=1024, ...}) = 0
 open("/var/lib/dpkg/alternatives/aptitude", O_RDONLY) = 3
 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4
 fstat(4, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(4, "# Locale name alias data base.\n#"..., 4096) = 2570
 read(4, "", 4096)                       = 0
 close(4)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 open("/usr/share/locale/en_US.utf8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 open("/usr/share/locale/en_US/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
@@ -62,969 +62,968 @@ open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 E
 open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 open("/usr/share/locale-langpack/en/LC_MESSAGES/dpkg.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 fstat(3, {st_mode=S_IFREG|0644, st_size=1024, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/aptitude\naptitude."..., 4096) = 1024
 stat("/usr/bin/aptitude-curses", {st_mode=S_IFREG|0755, st_size=3959960, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/automake", {st_mode=S_IFREG|0644, st_size=269, ...}) = 0
 open("/var/lib/dpkg/alternatives/automake", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=269, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/automake\naclocal\n/"..., 4096) = 269
 stat("/usr/bin/automake-1.11", {st_mode=S_IFREG|0755, st_size=259969, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/awk", {st_mode=S_IFREG|0644, st_size=207, ...}) = 0
 open("/var/lib/dpkg/alternatives/awk", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=207, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/awk\nawk.1.gz\n/usr/"..., 4096) = 207
 stat("/usr/bin/mawk", {st_mode=S_IFREG|0755, st_size=117744, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/b2m", {st_mode=S_IFREG|0644, st_size=119, ...}) = 0
 open("/var/lib/dpkg/alternatives/b2m", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=119, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/b2m\nb2m.1.gz\n/usr/"..., 4096) = 119
 stat("/usr/bin/b2m.emacs23", {st_mode=S_IFREG|0755, st_size=10536, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/bibtex", {st_mode=S_IFREG|0644, st_size=137, ...}) = 0
 open("/var/lib/dpkg/alternatives/bibtex", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=137, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/bibtex\nbibtex.1.gz"..., 4096) = 137
 stat("/usr/bin/bibtex.original", {st_mode=S_IFREG|0755, st_size=100688, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/builtins.7.gz", {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
 open("/var/lib/dpkg/alternatives/builtins.7.gz", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/share/man/man7/builtin"..., 4096) = 83
 stat("/usr/share/man/man7/bash-builtins.7.gz", {st_mode=S_IFREG|0644, st_size=508, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/c++", {st_mode=S_IFREG|0644, st_size=103, ...}) = 0
 open("/var/lib/dpkg/alternatives/c++", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=103, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/c++\nc++.1.gz\n/usr/"..., 4096) = 103
 stat("/usr/bin/g++", {st_mode=S_IFREG|0755, st_size=357312, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/c89", {st_mode=S_IFREG|0644, st_size=111, ...}) = 0
 open("/var/lib/dpkg/alternatives/c89", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=111, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/c89\nc89.1.gz\n/usr/"..., 4096) = 111
 stat("/usr/bin/c89-gcc", {st_mode=S_IFREG|0755, st_size=428, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/c99", {st_mode=S_IFREG|0644, st_size=111, ...}) = 0
 open("/var/lib/dpkg/alternatives/c99", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=111, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/c99\nc99.1.gz\n/usr/"..., 4096) = 111
 stat("/usr/bin/c99-gcc", {st_mode=S_IFREG|0755, st_size=454, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/cc", {st_mode=S_IFREG|0644, st_size=100, ...}) = 0
 open("/var/lib/dpkg/alternatives/cc", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=100, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/cc\ncc.1.gz\n/usr/sh"..., 4096) = 100
 stat("/usr/bin/gcc", {st_mode=S_IFREG|0755, st_size=353216, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/cli", {st_mode=S_IFREG|0644, st_size=105, ...}) = 0
 open("/var/lib/dpkg/alternatives/cli", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=105, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/cli\ncli.1.gz\n/usr/"..., 4096) = 105
 stat("/usr/bin/mono", {st_mode=S_IFREG|0755, st_size=3054984, ...}) = 0
+brk(0x69a000)                           = 0x69a000
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/cpp", {st_mode=S_IFREG|0644, st_size=32, ...}) = 0
 open("/var/lib/dpkg/alternatives/cpp", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=32, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/lib/cpp\n\n/usr/bin/cpp\n10\n\n", 4096) = 32
 stat("/usr/bin/cpp", {st_mode=S_IFREG|0755, st_size=357312, ...}) = 0
-brk(0x25b9000)                          = 0x25b9000
-brk(0x25b8000)                          = 0x25b8000
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ctags", {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
 open("/var/lib/dpkg/alternatives/ctags", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/ctags\nctags.1.gz\n/"..., 4096) = 129
 stat("/usr/bin/ctags.emacs23", {st_mode=S_IFREG|0755, st_size=101864, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/default.plymouth", {st_mode=S_IFREG|0644, st_size=209, ...}) = 0
 open("/var/lib/dpkg/alternatives/default.plymouth", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=209, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/lib/plymouth/themes/defaul"..., 4096) = 209
 stat("/lib/plymouth/themes/ubuntu-logo/ubuntu-logo.plymouth", {st_mode=S_IFREG|0644, st_size=233, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/dia", {st_mode=S_IFREG|0644, st_size=132, ...}) = 0
 open("/var/lib/dpkg/alternatives/dia", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=132, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/dia\n\n/usr/bin/dia-"..., 4096) = 132
 stat("/usr/bin/dia-gnome", {st_mode=S_IFREG|0755, st_size=540536, ...}) = 0
 stat("/usr/bin/dia-gnome-integrated", {st_mode=S_IFREG|0755, st_size=97, ...}) = 0
 stat("/usr/bin/dia-normal", {st_mode=S_IFREG|0755, st_size=540472, ...}) = 0
 stat("/usr/bin/dia-normal-integrated", {st_mode=S_IFREG|0755, st_size=92, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ebrowse", {st_mode=S_IFREG|0644, st_size=139, ...}) = 0
 open("/var/lib/dpkg/alternatives/ebrowse", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=139, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/ebrowse\nebrowse.1."..., 4096) = 139
 stat("/usr/bin/ebrowse.emacs23", {st_mode=S_IFREG|0755, st_size=43800, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/editor", {st_mode=S_IFREG|0644, st_size=599, ...}) = 0
 open("/var/lib/dpkg/alternatives/editor", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=599, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/editor\neditor.1.gz"..., 4096) = 599
 stat("/bin/ed", {st_mode=S_IFREG|0755, st_size=47552, ...}) = 0
 stat("/bin/nano", {st_mode=S_IFREG|0755, st_size=191960, ...}) = 0
 stat("/usr/bin/emacs23", {st_mode=S_IFREG|0755, st_size=10184632, ...}) = 0
 stat("/usr/bin/vim.tiny", {st_mode=S_IFREG|0755, st_size=777056, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/emacs", {st_mode=S_IFREG|0644, st_size=940, ...}) = 0
 open("/var/lib/dpkg/alternatives/emacs", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=940, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/emacs\nemacs-128x12"..., 4096) = 940
 stat("/usr/bin/emacs23-nox", {st_mode=S_IFREG|0755, st_size=10184632, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/emacsclient", {st_mode=S_IFREG|0644, st_size=159, ...}) = 0
 open("/var/lib/dpkg/alternatives/emacsclient", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=159, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/emacsclient\nemacsc"..., 4096) = 159
 stat("/usr/bin/emacsclient.emacs23", {st_mode=S_IFREG|0755, st_size=23440, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/etags", {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
 open("/var/lib/dpkg/alternatives/etags", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/etags\netags.1.gz\n/"..., 4096) = 129
 stat("/usr/bin/etags.emacs23", {st_mode=S_IFREG|0755, st_size=101800, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ex", {st_mode=S_IFREG|0644, st_size=48, ...}) = 0
 open("/var/lib/dpkg/alternatives/ex", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=48, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/ex\n\n/opt/vim/7.4/n"..., 4096) = 48
 stat("/opt/vim/7.4/nox/bin/ex", {st_mode=S_IFREG|0755, st_size=2279424, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/fakeroot", {st_mode=S_IFREG|0644, st_size=1100, ...}) = 0
 open("/var/lib/dpkg/alternatives/fakeroot", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=1100, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/fakeroot\nfaked.1.g"..., 4096) = 1100
-brk(0x25d9000)                          = 0x25d9000
+brk(0x6bb000)                           = 0x6bb000
 stat("/usr/bin/fakeroot-sysv", {st_mode=S_IFREG|0755, st_size=3895, ...}) = 0
 stat("/usr/bin/fakeroot-tcp", {st_mode=S_IFREG|0755, st_size=3890, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/fonts-japanese-gothic.ttf", {st_mode=S_IFREG|0644, st_size=119, ...}) = 0
 open("/var/lib/dpkg/alternatives/fonts-japanese-gothic.ttf", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=119, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/share/fonts/truetype/f"..., 4096) = 119
 stat("/usr/share/fonts/truetype/takao-gothic/TakaoPGothic.ttf", {st_mode=S_IFREG|0644, st_size=6234746, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/from", {st_mode=S_IFREG|0644, st_size=116, ...}) = 0
 open("/var/lib/dpkg/alternatives/from", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=116, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/from\nfrom.1.gz\n/us"..., 4096) = 116
 stat("/usr/bin/bsd-from", {st_mode=S_IFREG|0755, st_size=10416, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ftp", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
 open("/var/lib/dpkg/alternatives/ftp", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/ftp\nftp.1.gz\n/usr/"..., 4096) = 118
 stat("/usr/bin/netkit-ftp", {st_mode=S_IFREG|0755, st_size=89544, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/gconftool", {st_mode=S_IFREG|0644, st_size=137, ...}) = 0
 open("/var/lib/dpkg/alternatives/gconftool", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=137, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/gconftool\ngconftoo"..., 4096) = 137
 stat("/usr/bin/gconftool-2", {st_mode=S_IFREG|0755, st_size=60576, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/gem", {st_mode=S_IFREG|0644, st_size=192, ...}) = 0
 open("/var/lib/dpkg/alternatives/gem", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=192, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/gem\nbash_completio"..., 4096) = 192
 stat("/usr/bin/gem1.9.1", {st_mode=S_IFREG|0755, st_size=547, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ghostscript-current", {st_mode=S_IFREG|0644, st_size=70, ...}) = 0
 open("/var/lib/dpkg/alternatives/ghostscript-current", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=70, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/share/ghostscript/curr"..., 4096) = 70
 stat("/usr/share/ghostscript/9.05", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/glamor_conf", {st_mode=S_IFREG|0644, st_size=133, ...}) = 0
 open("/var/lib/dpkg/alternatives/glamor_conf", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=133, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/share/X11/xorg.conf.d/"..., 4096) = 133
 stat("/usr/share/nvidia-331-updates/glamor.conf", {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
 stat("/usr/share/nvidia-331/glamor.conf", {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/global-assembly-cache-tool", {st_mode=S_IFREG|0644, st_size=135, ...}) = 0
 open("/var/lib/dpkg/alternatives/global-assembly-cache-tool", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=135, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/cli-gacutil\ncli-ga"..., 4096) = 135
 stat("/usr/bin/gacutil", {st_mode=S_IFREG|0755, st_size=78, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/gnome-text-editor", {st_mode=S_IFREG|0644, st_size=149, ...}) = 0
 open("/var/lib/dpkg/alternatives/gnome-text-editor", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=149, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/gnome-text-editor\n"..., 4096) = 149
 stat("/usr/bin/gedit", {st_mode=S_IFREG|0755, st_size=676336, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/gnome-www-browser", {st_mode=S_IFREG|0644, st_size=117, ...}) = 0
 open("/var/lib/dpkg/alternatives/gnome-www-browser", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=117, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/gnome-www-browser\n"..., 4096) = 117
 stat("/usr/bin/chromium-browser", {st_mode=S_IFREG|0755, st_size=5716, ...}) = 0
 stat("/usr/bin/firefox", {st_mode=S_IFREG|0755, st_size=2667, ...}) = 0
 stat("/usr/bin/google-chrome-stable", {st_mode=S_IFREG|0755, st_size=3050, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/google-chrome", {st_mode=S_IFREG|0644, st_size=64, ...}) = 0
 open("/var/lib/dpkg/alternatives/google-chrome", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=64, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/google-chrome\n\n/us"..., 4096) = 64
 stat("/usr/bin/google-chrome-stable", {st_mode=S_IFREG|0755, st_size=3050, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/grep-changelog", {st_mode=S_IFREG|0644, st_size=174, ...}) = 0
 open("/var/lib/dpkg/alternatives/grep-changelog", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=174, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/grep-changelog\ngre"..., 4096) = 174
 stat("/usr/bin/grep-changelog.emacs23", {st_mode=S_IFREG|0755, st_size=7300, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/gstreamer-codec-install", {st_mode=S_IFREG|0644, st_size=64, ...}) = 0
 open("/var/lib/dpkg/alternatives/gstreamer-codec-install", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=64, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/gstreamer-codec-in"..., 4096) = 64
 stat("/usr/bin/gst-install", {st_mode=S_IFREG|0755, st_size=1019, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/guile", {st_mode=S_IFREG|0644, st_size=45, ...}) = 0
 open("/var/lib/dpkg/alternatives/guile", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=45, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/guile\n\n/usr/bin/gu"..., 4096) = 45
 stat("/usr/bin/guile-1.8", {st_mode=S_IFREG|0755, st_size=6192, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/haskell-compiler", {st_mode=S_IFREG|0644, st_size=143, ...}) = 0
 open("/var/lib/dpkg/alternatives/haskell-compiler", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=143, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/haskell-compiler\nh"..., 4096) = 143
 stat("/usr/bin/ghc", {st_mode=S_IFREG|0755, st_size=234, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/i386-linux-gnu_gl_conf", {st_mode=S_IFREG|0644, st_size=238, ...}) = 0
 open("/var/lib/dpkg/alternatives/i386-linux-gnu_gl_conf", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=238, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "manual\n/etc/ld.so.conf.d/i386-li"..., 4096) = 238
 stat("/usr/lib/nvidia-331-prime/alt_ld.so.conf", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
 stat("/usr/lib/nvidia-331-updates-prime/alt_ld.so.conf", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
 stat("/usr/lib/nvidia-331-updates/alt_ld.so.conf", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
 stat("/usr/lib/nvidia-331/alt_ld.so.conf", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/infobrowser", {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
 open("/var/lib/dpkg/alternatives/infobrowser", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/infobrowser\ninfobr"..., 4096) = 129
 stat("/usr/bin/info", {st_mode=S_IFREG|0755, st_size=182120, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/itweb-settings", {st_mode=S_IFREG|0644, st_size=349, ...}) = 0
 open("/var/lib/dpkg/alternatives/itweb-settings", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=349, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/itweb-settings\nitw"..., 4096) = 349
-brk(0x25fa000)                          = 0x25fa000
-brk(0x25f9000)                          = 0x25f9000
+brk(0x6dc000)                           = 0x6dc000
+brk(0x6db000)                           = 0x6db000
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/itweb-settings", {st_mode=S_IFREG|0755, st_size=757, ...}) = 0
 stat("/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/itweb-settings", {st_mode=S_IFREG|0755, st_size=757, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/java", {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
 open("/var/lib/dpkg/alternatives/java", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/java\njava.1.gz\n/us"..., 4096) = 170
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/java", {st_mode=S_IFREG|0755, st_size=39544, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/javaws", {st_mode=S_IFREG|0644, st_size=293, ...}) = 0
 open("/var/lib/dpkg/alternatives/javaws", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=293, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/javaws\njavaws.1.gz"..., 4096) = 293
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/javaws", {st_mode=S_IFREG|0755, st_size=1260, ...}) = 0
 stat("/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/javaws", {st_mode=S_IFREG|0755, st_size=1260, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/jexec", {st_mode=S_IFREG|0644, st_size=164, ...}) = 0
 open("/var/lib/dpkg/alternatives/jexec", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=164, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/jexec\njexec-binfmt"..., 4096) = 164
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/jexec", {st_mode=S_IFREG|0755, st_size=10440, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/kdesu", {st_mode=S_IFREG|0644, st_size=80, ...}) = 0
 open("/var/lib/dpkg/alternatives/kdesu", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=80, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/lib/kde4/libexec/kdesu"..., 4096) = 80
 stat("/usr/lib/kde4/libexec/kdesu-distrib/kdesu", {st_mode=S_IFREG|0755, st_size=52984, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/keytool", {st_mode=S_IFREG|0644, st_size=185, ...}) = 0
 open("/var/lib/dpkg/alternatives/keytool", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=185, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/keytool\nkeytool.1."..., 4096) = 185
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/keytool", {st_mode=S_IFREG|0755, st_size=39536, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ksh", {st_mode=S_IFREG|0644, st_size=130, ...}) = 0
 open("/var/lib/dpkg/alternatives/ksh", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=130, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/bin/ksh\nksh.1.gz\n/usr/shar"..., 4096) = 130
 stat("/bin/zsh4", {st_mode=S_IFREG|0755, st_size=688656, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/libblas.so.3gf", {st_mode=S_IFREG|0644, st_size=66, ...}) = 0
 open("/var/lib/dpkg/alternatives/libblas.so.3gf", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=66, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/lib/libblas.so.3gf\n\n/u"..., 4096) = 66
 stat("/usr/lib/libblas/libblas.so.3gf", {st_mode=S_IFREG|0644, st_size=630056, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/libgksu-gconf-defaults", {st_mode=S_IFREG|0644, st_size=158, ...}) = 0
 open("/var/lib/dpkg/alternatives/libgksu-gconf-defaults", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=158, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "manual\n/usr/share/gconf/defaults"..., 4096) = 158
 stat("/usr/share/libgksu/debian/gconf-defaults.libgksu-su", {st_mode=S_IFREG|0644, st_size=27, ...}) = 0
 stat("/usr/share/libgksu/debian/gconf-defaults.libgksu-sudo", {st_mode=S_IFREG|0644, st_size=26, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/liblapack.so.3gf", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/liblapack.so.3gf", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/lib/liblapack.so.3gf\n\n"..., 4096) = 69
 stat("/usr/lib/lapack/liblapack.so.3gf", {st_mode=S_IFREG|0644, st_size=9342808, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/libtxc-dxtn-x86_64-linux-gnu", {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
 open("/var/lib/dpkg/alternatives/libtxc-dxtn-x86_64-linux-gnu", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/lib/x86_64-linux-gnu/l"..., 4096) = 99
 stat("/usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0", {st_mode=S_IFREG|0644, st_size=202928, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/locate", {st_mode=S_IFREG|0644, st_size=173, ...}) = 0
 open("/var/lib/dpkg/alternatives/locate", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=173, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/locate\nlocate.1.gz"..., 4096) = 173
 stat("/usr/bin/mlocate", {st_mode=S_IFREG|S_ISGID|0755, st_size=39472, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/lua-compiler", {st_mode=S_IFREG|0644, st_size=125, ...}) = 0
 open("/var/lib/dpkg/alternatives/lua-compiler", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=125, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/luac\nlua-compiler-"..., 4096) = 125
 stat("/usr/bin/luac5.2", {st_mode=S_IFREG|0755, st_size=125312, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/lua-interpreter", {st_mode=S_IFREG|0644, st_size=112, ...}) = 0
 open("/var/lib/dpkg/alternatives/lua-interpreter", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=112, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/lua\nlua-manual\n/us"..., 4096) = 112
 stat("/usr/bin/lua5.2", {st_mode=S_IFREG|0755, st_size=191288, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/mozilla-flashplugin", {st_mode=S_IFREG|0644, st_size=111, ...}) = 0
 open("/var/lib/dpkg/alternatives/mozilla-flashplugin", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=111, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/lib/mozilla/plugins/fl"..., 4096) = 111
 stat("/usr/lib/flashplugin-installer/libflashplayer.so", {st_mode=S_IFREG|0644, st_size=19289472, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/mozilla-javaplugin.so", {st_mode=S_IFREG|0644, st_size=119, ...}) = 0
 open("/var/lib/dpkg/alternatives/mozilla-javaplugin.so", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=119, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/lib/mozilla/plugins/li"..., 4096) = 119
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/IcedTeaPlugin.so", {st_mode=S_IFREG|0644, st_size=209240, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/mrxvt", {st_mode=S_IFREG|0644, st_size=45, ...}) = 0
 open("/var/lib/dpkg/alternatives/mrxvt", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=45, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/mrxvt\n\n/usr/bin/mr"..., 4096) = 45
 stat("/usr/bin/mrxvt-full", {st_mode=S_IFREG|0755, st_size=317488, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/mt", {st_mode=S_IFREG|0644, st_size=98, ...}) = 0
 open("/var/lib/dpkg/alternatives/mt", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=98, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/bin/mt\nmt.1.gz\n/usr/share/"..., 4096) = 98
 stat("/bin/mt-gnu", {st_mode=S_IFREG|0755, st_size=68744, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/nc", {st_mode=S_IFREG|0644, st_size=221, ...}) = 0
 open("/var/lib/dpkg/alternatives/nc", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=221, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/bin/nc\nnc.1.gz\n/usr/share/"..., 4096) = 221
 stat("/bin/nc.openbsd", {st_mode=S_IFREG|0755, st_size=31152, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/net", {st_mode=S_IFREG|0644, st_size=117, ...}) = 0
 open("/var/lib/dpkg/alternatives/net", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=117, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/net\nnet.8.gz\n/usr/"..., 4096) = 117
 stat("/usr/bin/net.samba3", {st_mode=S_IFREG|0755, st_size=8649440, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/newt-palette", {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
 open("/var/lib/dpkg/alternatives/newt-palette", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/newt/palette\n\n/etc/new"..., 4096) = 83
 stat("/etc/newt/palette.original", {st_mode=S_IFREG|0644, st_size=309, ...}) = 0
 stat("/etc/newt/palette.ubuntu", {st_mode=S_IFREG|0644, st_size=336, ...}) = 0
-brk(0x261a000)                          = 0x261a000
-brk(0x2619000)                          = 0x2619000
+brk(0x6fc000)                           = 0x6fc000
+brk(0x6fb000)                           = 0x6fb000
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/nmblookup", {st_mode=S_IFREG|0644, st_size=146, ...}) = 0
 open("/var/lib/dpkg/alternatives/nmblookup", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=146, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/nmblookup\nnmblooku"..., 4096) = 146
 stat("/usr/bin/nmblookup.samba3", {st_mode=S_IFREG|0755, st_size=1640432, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/nodejs", {st_mode=S_IFREG|0644, st_size=622, ...}) = 0
 open("/var/lib/dpkg/alternatives/nodejs", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=622, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/node\nkeybase\n/usr/"..., 4096) = 622
 stat("/opt/nodejs/0.12.7/bin/node", {st_mode=S_IFREG|0775, st_size=15801827, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/openjade", {st_mode=S_IFREG|0644, st_size=55, ...}) = 0
 open("/var/lib/dpkg/alternatives/openjade", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=55, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/openjade\n\n/usr/bin"..., 4096) = 55
 stat("/usr/bin/openjade-1.4devel", {st_mode=S_IFREG|0755, st_size=616424, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/orbd", {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
 open("/var/lib/dpkg/alternatives/orbd", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/orbd\norbd.1.gz\n/us"..., 4096) = 170
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/orbd", {st_mode=S_IFREG|0755, st_size=39616, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/pack200", {st_mode=S_IFREG|0644, st_size=185, ...}) = 0
 open("/var/lib/dpkg/alternatives/pack200", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=185, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/pack200\npack200.1."..., 4096) = 185
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/pack200", {st_mode=S_IFREG|0755, st_size=39616, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/packer", {st_mode=S_IFREG|0644, st_size=4316, ...}) = 0
 open("/var/lib/dpkg/alternatives/packer", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=4316, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/packer\npacker-buil"..., 4096) = 4096
-brk(0x263a000)                          = 0x263a000
+brk(0x71c000)                           = 0x71c000
 stat("/opt/packer/0.8.2/packer", {st_mode=S_IFREG|0755, st_size=10975312, ...}) = 0
 read(3, "sioner-salt-masterless\n/opt/pack"..., 4096) = 220
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/pager", {st_mode=S_IFREG|0644, st_size=240, ...}) = 0
 open("/var/lib/dpkg/alternatives/pager", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=240, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/pager\npager.1.gz\n/"..., 4096) = 240
 stat("/bin/less", {st_mode=S_IFREG|0755, st_size=149384, ...}) = 0
 stat("/bin/more", {st_mode=S_IFREG|0755, st_size=35464, ...}) = 0
 stat("/usr/bin/most", {st_mode=S_IFREG|0755, st_size=65808, ...}) = 0
 stat("/usr/bin/pg", {st_mode=S_IFREG|0755, st_size=31336, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/pico", {st_mode=S_IFREG|0644, st_size=104, ...}) = 0
 open("/var/lib/dpkg/alternatives/pico", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=104, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/pico\npico.1.gz\n/us"..., 4096) = 104
 stat("/bin/nano", {st_mode=S_IFREG|0755, st_size=191960, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/pinentry", {st_mode=S_IFREG|0644, st_size=140, ...}) = 0
 open("/var/lib/dpkg/alternatives/pinentry", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=140, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/pinentry\npinentry."..., 4096) = 140
 stat("/usr/bin/pinentry-gtk-2", {st_mode=S_IFREG|0755, st_size=103152, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/pinentry-x11", {st_mode=S_IFREG|0644, st_size=152, ...}) = 0
 open("/var/lib/dpkg/alternatives/pinentry-x11", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=152, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/pinentry-x11\npinen"..., 4096) = 152
 stat("/usr/bin/pinentry-gtk-2", {st_mode=S_IFREG|0755, st_size=103152, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/policytool", {st_mode=S_IFREG|0644, st_size=200, ...}) = 0
 open("/var/lib/dpkg/alternatives/policytool", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=200, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/policytool\npolicyt"..., 4096) = 200
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/policytool", {st_mode=S_IFREG|0755, st_size=39544, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rcp", {st_mode=S_IFREG|0644, st_size=103, ...}) = 0
 open("/var/lib/dpkg/alternatives/rcp", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=103, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rcp\nrcp.1.gz\n/usr/"..., 4096) = 103
 stat("/usr/bin/scp", {st_mode=S_IFREG|0755, st_size=63552, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rcs-checkin", {st_mode=S_IFREG|0644, st_size=159, ...}) = 0
 open("/var/lib/dpkg/alternatives/rcs-checkin", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=159, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rcs-checkin\nrcs-ch"..., 4096) = 159
 stat("/usr/bin/rcs-checkin.emacs23", {st_mode=S_IFREG|0755, st_size=3989, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rename", {st_mode=S_IFREG|0644, st_size=120, ...}) = 0
 open("/var/lib/dpkg/alternatives/rename", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=120, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rename\nrename.1.gz"..., 4096) = 120
 stat("/usr/bin/prename", {st_mode=S_IFREG|0755, st_size=2987, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rlogin", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
 open("/var/lib/dpkg/alternatives/rlogin", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=118, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rlogin\nrlogin.1.gz"..., 4096) = 118
 stat("/usr/bin/slogin", {st_mode=S_IFREG|0755, st_size=429936, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rmid", {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
 open("/var/lib/dpkg/alternatives/rmid", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=170, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rmid\nrmid.1.gz\n/us"..., 4096) = 170
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/rmid", {st_mode=S_IFREG|0755, st_size=39536, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rmiregistry", {st_mode=S_IFREG|0644, st_size=205, ...}) = 0
 open("/var/lib/dpkg/alternatives/rmiregistry", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=205, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rmiregistry\nrmireg"..., 4096) = 205
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/rmiregistry", {st_mode=S_IFREG|0755, st_size=39544, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rmt", {st_mode=S_IFREG|0644, st_size=113, ...}) = 0
 open("/var/lib/dpkg/alternatives/rmt", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=113, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/sbin/rmt\nrmt.8.gz\n/usr"..., 4096) = 113
 stat("/usr/sbin/rmt-tar", {st_mode=S_IFREG|0755, st_size=52056, ...}) = 0
-brk(0x265b000)                          = 0x265b000
+brk(0x73d000)                           = 0x73d000
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rsh", {st_mode=S_IFREG|0644, st_size=103, ...}) = 0
 open("/var/lib/dpkg/alternatives/rsh", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=103, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rsh\nrsh.1.gz\n/usr/"..., 4096) = 103
 stat("/usr/bin/ssh", {st_mode=S_IFREG|0755, st_size=429936, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2html", {st_mode=S_IFREG|0644, st_size=73, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2html", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=73, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2html\n\n/usr/sha"..., 4096) = 73
 stat("/usr/share/docutils/scripts/python2/rst2html", {st_mode=S_IFREG|0755, st_size=593, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2latex", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2latex", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2latex\n\n/usr/sh"..., 4096) = 75
 stat("/usr/share/docutils/scripts/python2/rst2latex", {st_mode=S_IFREG|0755, st_size=790, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2man", {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2man", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2man\n\n/usr/shar"..., 4096) = 71
 stat("/usr/share/docutils/scripts/python2/rst2man", {st_mode=S_IFREG|0755, st_size=599, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2odt", {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2odt", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2odt\n\n/usr/shar"..., 4096) = 71
 stat("/usr/share/docutils/scripts/python2/rst2odt", {st_mode=S_IFREG|0755, st_size=763, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2odt_prepstyles", {st_mode=S_IFREG|0644, st_size=93, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2odt_prepstyles", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=93, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2odt_prepstyles"..., 4096) = 93
 stat("/usr/share/docutils/scripts/python2/rst2odt_prepstyles", {st_mode=S_IFREG|0755, st_size=1697, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2pseudoxml", {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2pseudoxml", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2pseudoxml\n\n/us"..., 4096) = 83
 stat("/usr/share/docutils/scripts/python2/rst2pseudoxml", {st_mode=S_IFREG|0755, st_size=600, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2s5", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2s5", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2s5\n\n/usr/share"..., 4096) = 69
 stat("/usr/share/docutils/scripts/python2/rst2s5", {st_mode=S_IFREG|0755, st_size=636, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2xetex", {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2xetex", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=75, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2xetex\n\n/usr/sh"..., 4096) = 75
 stat("/usr/share/docutils/scripts/python2/rst2xetex", {st_mode=S_IFREG|0755, st_size=785, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst2xml", {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst2xml", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst2xml\n\n/usr/shar"..., 4096) = 71
 stat("/usr/share/docutils/scripts/python2/rst2xml", {st_mode=S_IFREG|0755, st_size=601, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rst-buildhtml", {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
 open("/var/lib/dpkg/alternatives/rst-buildhtml", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=83, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rst-buildhtml\n\n/us"..., 4096) = 83
 stat("/usr/share/docutils/scripts/python2/rst-buildhtml", {st_mode=S_IFREG|0755, st_size=9935, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rstpep2html", {st_mode=S_IFREG|0644, st_size=79, ...}) = 0
 open("/var/lib/dpkg/alternatives/rstpep2html", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=79, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rstpep2html\n\n/usr/"..., 4096) = 79
 stat("/usr/share/docutils/scripts/python2/rstpep2html", {st_mode=S_IFREG|0755, st_size=669, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ruby", {st_mode=S_IFREG|0644, st_size=970, ...}) = 0
 open("/var/lib/dpkg/alternatives/ruby", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=970, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/ruby\nerb\n/usr/bin/"..., 4096) = 970
 stat("/usr/bin/ruby1.8", {st_mode=S_IFREG|0755, st_size=6200, ...}) = 0
 stat("/usr/bin/ruby1.9.1", {st_mode=S_IFREG|0755, st_size=6256, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/runhaskell", {st_mode=S_IFREG|0644, st_size=136, ...}) = 0
 open("/var/lib/dpkg/alternatives/runhaskell", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=136, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/runhaskell\nrunhask"..., 4096) = 136
 stat("/usr/bin/runghc", {st_mode=S_IFREG|0755, st_size=217, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rview", {st_mode=S_IFREG|0644, st_size=54, ...}) = 0
 open("/var/lib/dpkg/alternatives/rview", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=54, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/rview\n\n/opt/vim/7."..., 4096) = 54
 stat("/opt/vim/7.4/nox/bin/rview", {st_mode=S_IFREG|0755, st_size=2279424, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/rzsh", {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
 open("/var/lib/dpkg/alternatives/rzsh", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/bin/rzsh\nrzsh.1.gz\n/usr/sh"..., 4096) = 99
 stat("/bin/zsh4", {st_mode=S_IFREG|0755, st_size=688656, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/servertool", {st_mode=S_IFREG|0644, st_size=200, ...}) = 0
 open("/var/lib/dpkg/alternatives/servertool", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=200, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/servertool\nservert"..., 4096) = 200
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/servertool", {st_mode=S_IFREG|0755, st_size=39544, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/ssh-askpass", {st_mode=S_IFREG|0644, st_size=163, ...}) = 0
 open("/var/lib/dpkg/alternatives/ssh-askpass", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=163, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/ssh-askpass\nssh-as"..., 4096) = 163
 stat("/usr/lib/openssh/gnome-ssh-askpass", {st_mode=S_IFREG|0755, st_size=14296, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/tclsh", {st_mode=S_IFREG|0644, st_size=185, ...}) = 0
 open("/var/lib/dpkg/alternatives/tclsh", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=185, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/tclsh\ntclsh.1\n/usr"..., 4096) = 185
 stat("/usr/bin/tclsh-default", {st_mode=S_IFREG|0755, st_size=6200, ...}) = 0
-brk(0x267c000)                          = 0x267c000
+brk(0x75e000)                           = 0x75e000
 stat("/usr/bin/tclsh8.5", {st_mode=S_IFREG|0755, st_size=6200, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/telnet", {st_mode=S_IFREG|0644, st_size=133, ...}) = 0
 open("/var/lib/dpkg/alternatives/telnet", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=133, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/telnet\ntelnet.1.gz"..., 4096) = 133
 stat("/usr/bin/telnet.netkit", {st_mode=S_IFREG|0755, st_size=95376, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/testparm", {st_mode=S_IFREG|0644, st_size=142, ...}) = 0
 open("/var/lib/dpkg/alternatives/testparm", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=142, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/testparm\ntestparm."..., 4096) = 142
 stat("/usr/bin/testparm.samba3", {st_mode=S_IFREG|0755, st_size=1562608, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/text.plymouth", {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
 open("/var/lib/dpkg/alternatives/text.plymouth", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/lib/plymouth/themes/text.p"..., 4096) = 99
 stat("/lib/plymouth/themes/ubuntu-text/ubuntu-text.plymouth", {st_mode=S_IFREG|0644, st_size=205, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/tmux", {st_mode=S_IFREG|0644, st_size=108, ...}) = 0
 open("/var/lib/dpkg/alternatives/tmux", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=108, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/tmux\nman.tmux\n/usr"..., 4096) = 108
 stat("/opt/tmux/2.0/bin/tmux", {st_mode=S_IFREG|0755, st_size=2670944, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/tnameserv", {st_mode=S_IFREG|0644, st_size=195, ...}) = 0
 open("/var/lib/dpkg/alternatives/tnameserv", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=195, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/tnameserv\ntnameser"..., 4096) = 195
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/tnameserv", {st_mode=S_IFREG|0755, st_size=39624, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/traceroute6", {st_mode=S_IFREG|0644, st_size=160, ...}) = 0
 open("/var/lib/dpkg/alternatives/traceroute6", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=160, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/traceroute6\ntracer"..., 4096) = 160
 stat("/usr/bin/traceroute6.iputils", {st_mode=S_IFREG|S_ISUID|0755, st_size=18912, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/unpack200", {st_mode=S_IFREG|0644, st_size=195, ...}) = 0
 open("/var/lib/dpkg/alternatives/unpack200", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=195, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/unpack200\nunpack20"..., 4096) = 195
 stat("/usr/lib/jvm/java-6-openjdk-amd64/jre/bin/unpack200", {st_mode=S_IFREG|0755, st_size=87312, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/unrar", {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
 open("/var/lib/dpkg/alternatives/unrar", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/unrar\nunrar.1.gz\n/"..., 4096) = 129
 stat("/usr/bin/unrar-nonfree", {st_mode=S_IFREG|0755, st_size=200568, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/vi", {st_mode=S_IFREG|0644, st_size=401, ...}) = 0
 open("/var/lib/dpkg/alternatives/vi", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=401, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/vi\nvi.1.gz\n/usr/sh"..., 4096) = 401
 stat("/usr/bin/vim.tiny", {st_mode=S_IFREG|0755, st_size=777056, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/view", {st_mode=S_IFREG|0644, st_size=52, ...}) = 0
 open("/var/lib/dpkg/alternatives/view", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=52, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/view\n\n/opt/vim/7.4"..., 4096) = 52
 stat("/opt/vim/7.4/nox/bin/view", {st_mode=S_IFREG|0755, st_size=2279424, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/vim", {st_mode=S_IFREG|0644, st_size=267, ...}) = 0
 open("/var/lib/dpkg/alternatives/vim", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=267, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/vim\nman.vim\n/usr/s"..., 4096) = 267
 stat("/opt/vim/7.4/nox/bin/vim", {st_mode=S_IFREG|0755, st_size=2279424, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/vtrgb", {st_mode=S_IFREG|0644, st_size=78, ...}) = 0
 open("/var/lib/dpkg/alternatives/vtrgb", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=78, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/vtrgb\n\n/etc/console-se"..., 4096) = 78
 stat("/etc/console-setup/vtrgb", {st_mode=S_IFREG|0644, st_size=158, ...}) = 0
 stat("/etc/console-setup/vtrgb.vga", {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/w", {st_mode=S_IFREG|0644, st_size=107, ...}) = 0
 open("/var/lib/dpkg/alternatives/w", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=107, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/w\nw.1.gz\n/usr/shar"..., 4096) = 107
 stat("/usr/bin/w.procps", {st_mode=S_IFREG|0755, st_size=14680, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/wish", {st_mode=S_IFREG|0644, st_size=178, ...}) = 0
 open("/var/lib/dpkg/alternatives/wish", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=178, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/wish\nwish.1\n/usr/s"..., 4096) = 178
 stat("/usr/bin/wish-default", {st_mode=S_IFREG|0755, st_size=6224, ...}) = 0
 stat("/usr/bin/wish8.5", {st_mode=S_IFREG|0755, st_size=6224, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/write", {st_mode=S_IFREG|0644, st_size=122, ...}) = 0
 open("/var/lib/dpkg/alternatives/write", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=122, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/write\nwrite.1.gz\n/"..., 4096) = 122
 stat("/usr/bin/bsd-write", {st_mode=S_IFREG|S_ISGID|0755, st_size=14648, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/www-browser", {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
 open("/var/lib/dpkg/alternatives/www-browser", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=129, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/www-browser\nwww-br"..., 4096) = 129
 stat("/usr/bin/lynx", {st_mode=S_IFREG|0755, st_size=1477296, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/x86_64-linux-gnu_egl_conf", {st_mode=S_IFREG|0644, st_size=101, ...}) = 0
 open("/var/lib/dpkg/alternatives/x86_64-linux-gnu_egl_conf", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=101, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/ld.so.conf.d/x86_64-li"..., 4096) = 101
 stat("/usr/lib/x86_64-linux-gnu/mesa-egl/ld.so.conf", {st_mode=S_IFREG|0644, st_size=35, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/x86_64-linux-gnu_gl_conf", {st_mode=S_IFREG|0644, st_size=4964, ...}) = 0
 open("/var/lib/dpkg/alternatives/x86_64-linux-gnu_gl_conf", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=4964, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "manual\n/etc/ld.so.conf.d/x86_64-"..., 4096) = 4096
-brk(0x269d000)                          = 0x269d000
+brk(0x77f000)                           = 0x77f000
 stat("/usr/lib/nvidia-331-prime/ld.so.conf", {st_mode=S_IFREG|0644, st_size=60, ...}) = 0
 stat("/usr/lib/nvidia-331-updates-prime/ld.so.conf", {st_mode=S_IFREG|0644, st_size=60, ...}) = 0
 stat("/usr/lib/nvidia-331-updates/ld.so.conf", {st_mode=S_IFREG|0644, st_size=58, ...}) = 0
 stat("/usr/lib/nvidia-331/ld.so.conf", {st_mode=S_IFREG|0644, st_size=42, ...}) = 0
-brk(0x26be000)                          = 0x26be000
+brk(0x7a0000)                           = 0x7a0000
 read(3, "dpau_nvidia.so\n/usr/lib/nvidia-3"..., 4096) = 868
 stat("/usr/lib/x86_64-linux-gnu/mesa/ld.so.conf", {st_mode=S_IFREG|0644, st_size=31, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/x-cursor-theme", {st_mode=S_IFREG|0644, st_size=269, ...}) = 0
 open("/var/lib/dpkg/alternatives/x-cursor-theme", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=269, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/share/icons/default/in"..., 4096) = 269
 stat("/etc/X11/cursors/core.theme", {st_mode=S_IFREG|0644, st_size=27, ...}) = 0
 stat("/etc/X11/cursors/handhelds.theme", {st_mode=S_IFREG|0644, st_size=32, ...}) = 0
@@ -1033,176 +1032,173 @@ stat("/etc/X11/cursors/whiteglass.theme", {st_mode=S_IFREG|0644, st_size=33, ...
 stat("/usr/share/icons/DMZ-Black/cursor.theme", {st_mode=S_IFREG|0644, st_size=32, ...}) = 0
 stat("/usr/share/icons/DMZ-White/cursor.theme", {st_mode=S_IFREG|0644, st_size=32, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xdvi.bin", {st_mode=S_IFREG|0644, st_size=46, ...}) = 0
 open("/var/lib/dpkg/alternatives/xdvi.bin", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=46, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/xdvi.bin\n\n/usr/bin"..., 4096) = 46
 stat("/usr/bin/xdvi-xaw", {st_mode=S_IFREG|0755, st_size=847960, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-all_ALL", {st_mode=S_IFREG|0644, st_size=143, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-all_ALL", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=143, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/all"..., 4096) = 143
 stat("/etc/X11/xinit/xinput.d/default", {st_mode=S_IFREG|0644, st_size=1152, ...}) = 0
 stat("/etc/X11/xinit/xinput.d/default-xim", {st_mode=S_IFREG|0644, st_size=601, ...}) = 0
 stat("/etc/X11/xinit/xinput.d/none", {st_mode=S_IFREG|0644, st_size=474, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-ja_JP", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-ja_JP", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/ja_"..., 4096) = 69
 stat("/etc/X11/xinit/xinput.d/ibus", {st_mode=S_IFREG|0644, st_size=1574, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-ko_KR", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-ko_KR", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/ko_"..., 4096) = 69
 stat("/etc/X11/xinit/xinput.d/ibus", {st_mode=S_IFREG|0644, st_size=1574, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-lo_TH", {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-lo_TH", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=71, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/lo_"..., 4096) = 71
 stat("/etc/X11/xinit/xinput.d/lo-gtk", {st_mode=S_IFREG|0644, st_size=636, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-th_TH", {st_mode=S_IFREG|0644, st_size=105, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-th_TH", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=105, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/th_"..., 4096) = 105
 stat("/etc/X11/xinit/xinput.d/th-gtk", {st_mode=S_IFREG|0644, st_size=643, ...}) = 0
 stat("/etc/X11/xinit/xinput.d/th-xim", {st_mode=S_IFREG|0644, st_size=610, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-zh_CN", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-zh_CN", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/zh_"..., 4096) = 69
 stat("/etc/X11/xinit/xinput.d/ibus", {st_mode=S_IFREG|0644, st_size=1574, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-zh_HK", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-zh_HK", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/zh_"..., 4096) = 69
 stat("/etc/X11/xinit/xinput.d/ibus", {st_mode=S_IFREG|0644, st_size=1574, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-zh_SG", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-zh_SG", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/zh_"..., 4096) = 69
 stat("/etc/X11/xinit/xinput.d/ibus", {st_mode=S_IFREG|0644, st_size=1574, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xinput-zh_TW", {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
 open("/var/lib/dpkg/alternatives/xinput-zh_TW", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=69, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/etc/X11/xinit/xinput.d/zh_"..., 4096) = 69
 stat("/etc/X11/xinit/xinput.d/ibus", {st_mode=S_IFREG|0644, st_size=1574, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/x-session-manager", {st_mode=S_IFREG|0644, st_size=222, ...}) = 0
 open("/var/lib/dpkg/alternatives/x-session-manager", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=222, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/x-session-manager\n"..., 4096) = 222
 stat("/usr/bin/gnome-session", {st_mode=S_IFREG|0755, st_size=248192, ...}) = 0
 stat("/usr/bin/lxsession", {st_mode=S_IFREG|0755, st_size=40120, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/x-terminal-emulator", {st_mode=S_IFREG|0644, st_size=504, ...}) = 0
 open("/var/lib/dpkg/alternatives/x-terminal-emulator", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=504, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/x-terminal-emulato"..., 4096) = 504
 stat("/usr/bin/gnome-terminal.wrapper", {st_mode=S_IFREG|0755, st_size=1394, ...}) = 0
 stat("/usr/bin/koi8rxterm", {st_mode=S_IFREG|0755, st_size=3759, ...}) = 0
 stat("/usr/bin/lxterm", {st_mode=S_IFREG|0755, st_size=419, ...}) = 0
 stat("/usr/bin/mrxvt-full", {st_mode=S_IFREG|0755, st_size=317488, ...}) = 0
-brk(0x26df000)                          = 0x26df000
 stat("/usr/bin/terminator", {st_mode=S_IFREG|0755, st_size=3415, ...}) = 0
+brk(0x7c1000)                           = 0x7c1000
 stat("/usr/bin/uxterm", {st_mode=S_IFREG|0755, st_size=3674, ...}) = 0
 stat("/usr/bin/xterm", {st_mode=S_IFREG|0755, st_size=433408, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/x-window-manager", {st_mode=S_IFREG|0644, st_size=172, ...}) = 0
 open("/var/lib/dpkg/alternatives/x-window-manager", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=172, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/x-window-manager\nx"..., 4096) = 172
 stat("/usr/bin/metacity", {st_mode=S_IFREG|0755, st_size=569488, ...}) = 0
 stat("/usr/bin/xmonad", {st_mode=S_IFREG|0755, st_size=2577632, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/x-www-browser", {st_mode=S_IFREG|0644, st_size=113, ...}) = 0
 open("/var/lib/dpkg/alternatives/x-www-browser", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=113, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/x-www-browser\n\n/us"..., 4096) = 113
 stat("/usr/bin/chromium-browser", {st_mode=S_IFREG|0755, st_size=5716, ...}) = 0
 stat("/usr/bin/firefox", {st_mode=S_IFREG|0755, st_size=2667, ...}) = 0
 stat("/usr/bin/google-chrome-stable", {st_mode=S_IFREG|0755, st_size=3050, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/xxd", {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
 open("/var/lib/dpkg/alternatives/xxd", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/usr/bin/xxd\n\n/opt/vim/7.4/"..., 4096) = 50
 stat("/opt/vim/7.4/nox/bin/xxd", {st_mode=S_IFREG|0755, st_size=18816, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/var/lib/dpkg/alternatives/zsh", {st_mode=S_IFREG|0644, st_size=63, ...}) = 0
 open("/var/lib/dpkg/alternatives/zsh", O_RDONLY) = 3
 fstat(3, {st_mode=S_IFREG|0644, st_size=63, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
 read(3, "auto\n/bin/zsh\nzsh-usrbin\n/usr/bi"..., 4096) = 63
 stat("/bin/zsh4", {st_mode=S_IFREG|0755, st_size=688656, ...}) = 0
 close(3)                                = 0
-munmap(0x7f6c238b0000, 4096)            = 0
+munmap(0x7fd2ef97a000, 4096)            = 0
 stat("/opt/go/1.4.2/bin/go", {st_mode=S_IFREG|0755, st_size=9571864, ...}) = 0
-stat("/var/lib/dpkg/alternatives/go", 0x7ffffd43afe0) = -1 ENOENT (No such file or directory)
+stat("/var/lib/dpkg/alternatives/go", 0x7ffec17473c0) = -1 ENOENT (No such file or directory)
 open("/var/log/alternatives.log", O_WRONLY|O_CREAT|O_APPEND, 0666) = 3
-fstat(3, {st_mode=S_IFREG|0644, st_size=22045, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238b0000
-fstat(3, {st_mode=S_IFREG|0644, st_size=22045, ...}) = 0
-lseek(3, 22045, SEEK_SET)               = 22045
+fstat(3, {st_mode=S_IFREG|0644, st_size=25665, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef97a000
+fstat(3, {st_mode=S_IFREG|0644, st_size=25665, ...}) = 0
+lseek(3, 25665, SEEK_SET)               = 25665
 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 4
 fstat(4, {st_mode=S_IFREG|0644, st_size=2819, ...}) = 0
 fstat(4, {st_mode=S_IFREG|0644, st_size=2819, ...}) = 0
-mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6c238af000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd2ef979000
 read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\0"..., 4096) = 2819
 lseek(4, -1802, SEEK_CUR)               = 1017
 read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 4096) = 1802
 close(4)                                = 0
-munmap(0x7f6c238af000, 4096)            = 0
-lstat("/etc/alternatives/go", 0x7ffffd43b0a0) = -1 ENOENT (No such file or directory)
-write(1, "update-alternatives: ", 21)   = 21
-write(1, "setting up automatic selection o"..., 37) = 37
-write(1, "\n", 1)                       = 1
+munmap(0x7fd2ef979000, 4096)            = 0
+lstat("/etc/alternatives/go", 0x7ffec1747480) = -1 ENOENT (No such file or directory)
 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2819, ...}) = 0
 write(1, "update-alternatives: ", 21)   = 21
 write(1, "using /opt/go/1.4.2/bin/go to pr"..., 77) = 77
 write(1, "\n", 1)                       = 1
 unlink("/etc/alternatives/go.dpkg-tmp") = 0
 symlink("/opt/go/1.4.2/bin/go", "/etc/alternatives/go.dpkg-tmp") = 0
-lstat("/usr/local/go/bin/go", 0x7ffffd43b000) = -1 ENOENT (No such file or directory)
+lstat("/usr/local/go/bin/go", 0x7ffec17473e0) = -1 ENOENT (No such file or directory)
 unlink("/usr/local/go/bin/go.dpkg-tmp") = -1 ENOENT (No such file or directory)
 symlink("/etc/alternatives/go", "/usr/local/go/bin/go.dpkg-tmp") = -1 ENOENT (No such file or directory)
 write(2, "update-alternatives: error: ", 28) = 28
@@ -1220,5 +1216,5 @@ open("/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 E
 open("/usr/share/locale-langpack/en.utf8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 open("/usr/share/locale-langpack/en/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
 write(2, ": No such file or directory\n", 28) = 28
-write(3, "update-alternatives 2015-08-09 2"..., 216) = 216
+write(3, "update-alternatives 2015-08-10 1"..., 1693) = 1693
 exit_group(2)                           = ?

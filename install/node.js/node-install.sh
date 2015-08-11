@@ -5,10 +5,11 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-NODE="/opt/nodejs/0.12.7"
-NODE_BIN="$NODE/bin"
-NODE_MAN="$NODE/share/man"
-NPM="$NODE/lib/node_modules/npm"
+NODE="/opt/nodejs"
+NODE_VER="0.12.7"
+NODE_BIN="$NODE/$NODE_VER/bin"
+NODE_MAN="$NODE/$NODE_VER/share/man"
+NPM="$NODE/$NODE_VER/lib/node_modules/npm"
 NPM_BIN="$NODE_BIN"
 NPM_MAN="$NPM/man"
 PRIORITY_LEVEL=1200
