@@ -5,8 +5,8 @@
 
 BIN="/usr/bin"
 MAN="/usr/share/man"
-NODE="/opt/nodejs"
-NODE_VER="0.12.7"
+NODE="/opt/node.js"
+NODE_VER="4.2.0"
 NODE_BIN="$NODE/$NODE_VER/bin"
 NODE_MAN="$NODE/$NODE_VER/share/man"
 NPM="$NODE/$NODE_VER/lib/node_modules/npm"
@@ -14,7 +14,7 @@ NPM_BIN="$NODE_BIN"
 NPM_MAN="$NPM/man"
 PRIORITY_LEVEL=1200
 
-update-alternatives --install $BIN/node nodejs $NODE_BIN/node $PRIORITY_LEVEL \
+update-alternatives --install $BIN/node node $NODE_BIN/node $PRIORITY_LEVEL \
  --slave $BIN/npm npm $NODE_BIN/npm \
  --slave $BIN/keybase-installer keybase-installer $NODE_BIN/keybase-installer \
  --slave $BIN/keybase keybase $NODE_BIN/keybase \
