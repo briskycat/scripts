@@ -108,3 +108,9 @@ build
 *.perspectivev3
 .oh-my-zsh
 git-rm*
+
+# # .-specific #
+# ##############
+aws/role-policy.json
+aws/trust-policy.json
+aws/upload-ssl-cert*.sh
